@@ -1,7 +1,10 @@
+rm(list = ls())
+
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-# Load necessary packages
+# Load Packages ####
 library(httr)
 library(dplyr)
+library(ggplot2)
 
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # Get from URL ####
@@ -30,11 +33,33 @@ for(i in 1:length(rows)){
 }
 
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-# Plots ####
+## Plots ####
 
 df <- data.frame(date = as.Date(data$date, format = "%m/%d/%Y"), 
                  count = as.numeric(data$count))
 head(df)
 
 plot(df, type = "l")
-plot(df, type = "h")
+
+df_1819 <- subset(df, date >= as.Date("2018-01-01") & date <= as.Date("2019-12-31"))
+
+ggplot(df_1819, aes(x = date, y = count)) +
+    geom_line() +
+    labs(x = "Date", y = "Count", title = "") +
+    theme_minimal() + 
+    scale_x_date(date_breaks = "months", date_labels = "%b %g", expand = c(0, 0)) +
+    theme(axis.text.x = element_text(angle=60, hjust=1))
+
+hist(df$count, breaks = 30, col = "lightblue", probability=TRUE,
+     main = "Histogram with Density Curve", xlab = "Count")
+lines(density(df$count), col="red", lw=2)
+
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+# Get Weather Data ####
+
+# Daten sind probably hourly und müssten auf daily aggregiert werden, z.B. 
+
+    # Summe Niederschlag, 
+    # Avg- / Max- Temperatur
+    # Avg- / Max- Windgeschwindigkeit
+    # Sonnenscheindauer
