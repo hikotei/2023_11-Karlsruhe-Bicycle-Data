@@ -16,10 +16,12 @@ data_text <- content(response, "text")
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # Data Processing ####
 
-# remove quotation marks and backslashes
-test <- gsub('["\\]', '', data_text)
+# remove first 2 and last 2 square brackets [[ ... ]]
+txt <- substr(data_text, start=3, stop = nchar(data_text)-2)
+# remove all quotation marks and backslashes
+txt <- gsub('[\\"]', '', txt)
 # split rows by comma and square brackets
-rows <- unlist(strsplit(test, "\\],\\["))
+rows <- unlist(strsplit(txt, "\\],\\["))
 
 # save in dataframe
 data <- data.frame(date = NA, count = NA)
