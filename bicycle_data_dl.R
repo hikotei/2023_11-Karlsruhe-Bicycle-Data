@@ -16,25 +16,15 @@ data_text <- content(response, "text")
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # Data Processing ####
 
-# remove first and last square brackets [ ... ]
-txt <- substr(data_text, start=3, stop = nchar(data_text)-2)
+# remove quotation marks and backslashes
+test <- gsub('["\\]', '', data_text)
 # split rows by comma and square brackets
-rows <- unlist(strsplit(txt, "\\],\\["))
+rows <- unlist(strsplit(test, "\\],\\["))
 
 # save in dataframe
 data <- data.frame(date = NA, count = NA)
 for(i in 1:length(rows)){
-    
-    # split each row into timestamp and value
-    this_row_raw <- unlist(strsplit(rows[i], ","))
-    
-    # extract data from format ... "\"05/03/2012\"" 
-    # by removing backslashes and quotation marks
-    this_row <- c(gsub("\"", "", this_row_raw[1]),
-                  gsub("\"", "", this_row_raw[2]))
-    
-    # save to dataframe
-    data[i,] <- this_row
+    data[i,] <- unlist(strsplit(rows[i], ","))
 }
 
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
