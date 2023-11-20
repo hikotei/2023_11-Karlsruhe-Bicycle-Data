@@ -29,13 +29,13 @@ txt <- gsub('[\\"]', '', txt)
 rows <- unlist(strsplit(txt, "\\],\\["))
 
 # save in dataframe
-data <- data.frame(date = NA, count = NA)
+data <- data.frame(date = NA, bike_count = NA)
 for(i in 1:length(rows)){
     data[i,] <- unlist(strsplit(rows[i], ","))
 }
 
 bike_df <- data.frame(date = as.Date(data$date, format = "%m/%d/%Y"), 
-                      count = as.numeric(data$count))
+                      bike_count = as.numeric(data$bike_count))
 
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 ## Plots ####
@@ -45,16 +45,16 @@ plot(bike_df, type = "l")
 # Look at 2018, 2019 since there is a large outlier in summer 2018
 df_1819 <- subset(bike_df, date >= as.Date("2018-01-01") & date <= as.Date("2019-12-31"))
 
-ggplot(df_1819, aes(x = date, y = count)) +
+ggplot(df_1819, aes(x = date, y = bike_count)) +
     geom_line() +
     labs(x = "Date", y = "Count", title = "") +
     theme_minimal() + 
     scale_x_date(date_breaks = "months", date_labels = "%b %g", expand = c(0, 0)) +
     theme(axis.text.x = element_text(angle=60, hjust=1))
 
-hist(bike_df$count, breaks = 30, col = "lightblue", probability=TRUE,
+hist(bike_df$bike_count, breaks = 30, col = "lightblue", probability=TRUE,
      main = "Histogram with Density Curve", xlab = "Count")
-lines(density(bike_df$count), col="red", lw=2)
+lines(density(bike_df$bike_count), col="red", lw=2)
 
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # Get Weather Data ####
@@ -184,8 +184,19 @@ merged_df_nodate <- merged_df[, -which(names(merged_df) == "date")]
 # corrplot(cor_matrix, method = "circle", type = "upper", tl.col = "black", tl.srt = 45)
 
 library(GGally)
-ggcorr(merged_df_nodate, label=TRUE, label_size=3, label_round=2, 
-       max_size=10, min_size=2, size=3, angle=0, hjust=0.9)
 
-# nbreaks adds discrete colour levels
+corr_plot <- ggcorr(merged_df_nodate, label=TRUE, label_size=3, label_round=2, 
+                    max_size=10, min_size=2, size=3, angle=0, hjust=0.6, nbreaks=7) +
+    theme(
+        legend.position = "bottom",  # Move the legend to the bottom
+        legend.direction = "horizontal"  # Set the legend direction to horizontal
+    ) +
+    guides(fill = guide_legend(nrow = 1, byrow = TRUE, keywidth = unit(1, "cm")))
+
+# param : nbreaks adds discrete colour levels
+
+# Save the plot as a square PNG
+ggsave(filename = "bikedata_corr_plot.png",
+       plot = corr_plot, width=10, height=10)
+
 
