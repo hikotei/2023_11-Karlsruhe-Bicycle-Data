@@ -27,7 +27,7 @@
 | "TGK.Lufttemperatur_5cm_min"| Lufttemperatur_5cm_min column|
 
 #### Corr Plot
-![Alt text](path/to/bikedata_corr_plot.png "Title")
+![alt text](./bikedata_corr_plot.png "Title")
 
 #### Fragen zu R DWD
 - was bedeutet KL bei den variabeln? scheint eine Zusammenfassung von mehreren Wetterkennzahlen zu sein?
