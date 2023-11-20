@@ -33,6 +33,9 @@
 - was bedeutet KL bei den variabeln? scheint eine Zusammenfassung von mehreren Wetterkennzahlen zu sein?
 - schien ganz praktisch zu sein alle variabeln in einem Link zu bekommen ... habe ich benutzt
 
+A: Siehe (Formatbeschreibung)[https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/subdaily/standard_format/formate_kl.html]
+MOZ = Mittlere Orts-Zeit
+
 ---
 
 ### ToDos 2023.11.03
