@@ -8,23 +8,23 @@
 
 | Column Name                | Description                                      |
 |--------------------------- |--------------------------------------------------|
-| "date"                     | Date of the record                               |
-| "count"                    | Passed Bicycle Count                             |
+| "date"                     | Timestamp                               |
+| "count"                    | Passed Bicycles Count                             |
 | "weekday"                  | Day of the week (1=Monday, ..., 7=Sunday)       |
 | "is_weekend"               | Binary Indicator for weekend (1=Weekend, 0=Weekday) |
 | "is_holiday"               | Binary Indicator for holiday (1=Holiday, 0=Workday)  |
-| "FX.Windspitze"            | Windspitze column                                |
-| "FM.Windgeschwindigkeit"   | Windgeschwindigkeit column                       |
-| "RSK.Niederschlagshoehe"   | Niederschlagshoehe column                        |
-| "RSKF.Niederschlagsform"   | Niederschlagsform column                         |
-| "SDK.Sonnenscheindauer"    | Sonnenscheindauer column                         |
-| "SHK_TAG.Schneehoehe"      | Schneehoehe column                               |
-| "NM.Bedeckungsgrad"        | Bedeckungsgrad column                            |
-| "TMK.Lufttemperatur"       | Lufttemperatur column                            |
-| "UPM.Relative_Feuchte"     | Relative Feuchte column                          |
-| "TXK.Lufttemperatur_Max"   | Lufttemperatur_Max column                        |
-| "TNK.Lufttemperatur_Min"   | Lufttemperatur_Min column                        |
-| "TGK.Lufttemperatur_5cm_min"| Lufttemperatur_5cm_min column                    |
+| "FX.Windspitze"            | Windspitze                                 |
+| "FM.Windgeschwindigkeit"   | Windgeschwindigkeit                        |
+| "RSK.Niederschlagshoehe"   | Niederschlagshoehe                         |
+| "RSKF.Niederschlagsform"   | Niederschlagsform                          |
+| "SDK.Sonnenscheindauer"    | Sonnenscheindauer                          |
+| "SHK_TAG.Schneehoehe"      | Schneehoehe                                |
+| "NM.Bedeckungsgrad"        | Bedeckungsgrad                             |
+| "TMK.Lufttemperatur"       | Lufttemperatur                             |
+| "UPM.Relative_Feuchte"     | Relative Feuchte                           |
+| "TXK.Lufttemperatur_Max"   | Lufttemperatur_Max                         |
+| "TNK.Lufttemperatur_Min"   | Lufttemperatur_Min                         |
+| "TGK.Lufttemperatur_5cm_min"| Lufttemperatur_5cm_min                     |
 
 #### Corr Plot
 ![alt text](./bikedata_corr_plot.png "Title")
