@@ -27,12 +27,7 @@
 | "TGK.Lufttemperatur_5cm_min"| Lufttemperatur_5cm_min column|
 
 #### Corr Plot
-<figure>
-  <object data="path/to/bikedata_corr_plot.pdf" type="application/pdf" width="100%" height="500">
-    <p>Your browser does not support PDFs. You can <a href="path/to/bikedata_corr_plot.pdf">download the PDF</a> instead.</p>
-  </object>
-  <figcaption>Correlation Plot: bikedata</figcaption>
-</figure>
+![alt text](./bikedata_corr_plot.png "Title")
 
 #### Fragen zu R DWD
 - was bedeutet KL bei den variabeln? scheint eine Zusammenfassung von mehreren Wetterkennzahlen zu sein?
