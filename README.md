@@ -12,3 +12,10 @@
 
 - Die Rohdaten gibt es theoretisch auch über z.B: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/air_temperature/recent/, aber das rDWD Paket ist sicher die einfachere Zugriffsmöglichkeit darauf
 - Die Daten sind vermutlich in stündlicher Auflösung und müssten zu tageweisen Daten aggregiert werden (z.B. Summe Niederschlag, Durchschnitts- / Maximum- Temperatur und Windgeschwindigkeit, Sonnenscheindauer,
+
+---
+
+### Fragen
+
+#### zu R DWD
+- was bedeutet KL bei den variabeln? scheint eine Zusammenfassung von mehreren Wetterkennzahlen zu sein? 
