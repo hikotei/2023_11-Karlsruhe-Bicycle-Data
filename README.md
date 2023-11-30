@@ -2,34 +2,60 @@
 
 ---
 
-### Update 2023.11.20
+### Wetterdaten
 
-#### Neue Spalten
+#### Stündliche Stationsmessungen der Lufttemperatur und Luftfeuchte für Deutschland
+[Description Document](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/air_temperature/BESCHREIBUNG_obsgermany_climate_hourly_air_temperature_de.pdf)
 
-| Column Name                | Description                                      |
-|--------------------------- |--------------------------------------------------|
-| "date"                     | Timestamp                               |
-| "count"                    | Passed Bicycles Count                             |
-| "weekday"                  | Day of the week (1=Monday, ..., 7=Sunday)       |
-| "is_weekend"               | Binary Indicator for weekend (1=Weekend, 0=Weekday) |
-| "is_holiday"               | Binary Indicator for holiday (1=Holiday, 0=Workday)  |
-| "FX.Windspitze"            | Windspitze                                 |
-| "FM.Windgeschwindigkeit"   | Windgeschwindigkeit                        |
-| "RSK.Niederschlagshoehe"   | Niederschlagshoehe                         |
-| "RSKF.Niederschlagsform"   | Niederschlagsform                          |
-| "SDK.Sonnenscheindauer"    | Sonnenscheindauer                          |
-| "SHK_TAG.Schneehoehe"      | Schneehoehe                                |
-| "NM.Bedeckungsgrad"        | Bedeckungsgrad                             |
-| "TMK.Lufttemperatur"       | Lufttemperatur                             |
-| "UPM.Relative_Feuchte"     | Relative Feuchte                           |
-| "TXK.Lufttemperatur_Max"   | Lufttemperatur_Max                         |
-| "TNK.Lufttemperatur_Min"   | Lufttemperatur_Min                         |
-| "TGK.Lufttemperatur_5cm_min"| Lufttemperatur_5cm_min                     |
+- `TT_TU.Lufttemperatur`: Lufttemperatur in °C 
+- `RF_TU.Relative_Feuchte`: relative Feuchte in %
 
-#### Corr Plot
+#### Stundenmaximum aus Stationsmessungen der Windgeschwindigkeit für Deutschland
+[Description Document](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/extreme_wind/BESCHREIBUNG_obsgermany_climate_hourly_extreme_wind_de.pdf)
+
+- `FX_911.Windspitze_Stunde1`: Windgeschwindigkeit, Windspitze in m/s, Fehlwerte=-999
+
+#### Stundenmittel aus Stationsmessungen der Windgeschwindigkeit und Windrichtung für Deutschland
+[Description Document](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/wind/BESCHREIBUNG_obsgermany_climate_hourly_wind_de.pdf)
+
+- `F.Windgeschwindigkeit`: Windgeschwindigkeit in m/s, Fehlwerte=-999
+- `D.Windrichtung`: Windrichtung in °, Fehlwerte=-999
+
+#### Stündliche Stationsmessungen des Niederschlags für Deutschland
+[Description Document](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/precipitation/BESCHREIBUNG_obsgermany_climate_hourly_precipitation_de.pdf)
+
+- `R1.Niederschlagshoehe`: Niederschlagshoehe in mm (Stundensumme)
+- `RS_IND.Niederschlagsindikator`: Indikator Niederschlag, 0=nein, 1=ja, -999=Fehlwert
+- `WRTR.Niederschlagsform`:
+  - 0 = kein Niederschlag (konventionelle oder automatische Messung)
+  - 1 = nur Regen (in historischen Daten vor dem 01.01.1979)
+  - 4 = Form des Niederschlags nicht bekannt, obwohl Niederschlag gemeldet; Form fallender und abgesetzter Niederschläge können bei automatischer Messung nicht eindeutig festgestellt werden
+  - 6 = nur Regen; flüssiger Niederschlag bei automatischer Messung
+  - 7 = nur Schnee; fester Niederschlag bei automatischer Messung
+  - 8 = Regen und Schnee und/oder Schneeregen; flüssig und fester Niederschlag bei automatischer Messung
+  - 9 = Fehlkennung; fehlender Wert oder Niederschlagsform nicht feststellbar bei automatischer Messung
+  - -999 = Fehlwert
+
+#### Stündliche Stationsmessungen der Sonnenscheindauer für Deutschland
+[Description Document](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/sun/BESCHREIBUNG_obsgermany_climate_hourly_sun_de.pdf)
+
+- `SD_SO.Sonnenscheindauer`: stdl. Sonnenscheindauer in min, Fehlwert = -999 (Stundensumme)
+
+#### Stündliche Stationsmessungen der Sichtweite für Deutschland
+[Description Document](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/visibility/BESCHREIBUNG_obsgermany_climate_hourly_visibility_de.pdf)
+
+- `QN_8`: Qualitaetsniveau
+  - QN = 3: automatische Prüfung und Korrektur;
+  - QN = 5: historische, subjektive Verfahren;
+  - QN = 7: geprüft, gepflegt, nicht korrigiert; 
+- `V_VV_I`: Sichtweiten Index, Angabe wie die Messung erfolgte
+  - P=Beobachter(Person),I=Instrument, Fehlwerte=-999
+- `V_VV.Sichtweite`: Sichtweite in Metern, Fehlwerte=-999
+
+### Corr Plot
 ![alt text](./bikedata_corr_plot.png "Title")
 
-#### Fragen zu R DWD
+### Fragen zu R DWD
 - was bedeutet KL bei den variabeln? scheint eine Zusammenfassung von mehreren Wetterkennzahlen zu sein?
 - schien ganz praktisch zu sein alle variabeln in einem Link zu bekommen ... habe ich benutzt
 
