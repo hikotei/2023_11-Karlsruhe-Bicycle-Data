@@ -78,34 +78,76 @@ vars_hourly = c("air_temperature", "sun", "precipitation", "visibility", "wind",
 # locdir()
 
 # - - - - - - - - - 
-# link <- selectDWD(id=4177, res="hourly", var=vars_hourly, per="recent")
-# weather_recent <- dataDWD(link, force=NA, varnames=TRUE, read=TRUE)
+## [old] kl code block ####
+# - - - - - - - - -
+
+# link <- selectDWD(id=4177, res="daily", var=c("kl"), per=c("historical", "recent"))
+# weather_data <- dataDWD(link, force=NA, varnames=TRUE, read=TRUE)
+#
+# historic_last_date <- max(weather_data[[1]]$MESS_DATUM)
+# bike_df_first_date <- as.POSIXct(min(bike_df$date))
 # 
-# link <- selectDWD(id=4177, res="hourly", var=vars_hourly, per="historical")
-# weather_historical <- dataDWD(link, force=NA, varnames=TRUE, read=TRUE)
+# historic_weather_data <- weather_data[[1]][weather_data[[1]]$MESS_DATUM > bike_df_first_date, ]
+# recent_weather_data <- weather_data[[2]][weather_data[[2]]$MESS_DATUM > historic_last_date, ]
+# 
+# combined_df <- rbind(historic_weather_data, recent_weather_data)
+# combined_df$MESS_DATUM <- as.Date(combined_df$MESS_DATUM)
+# 
+# # Columns to keep
+# columns_to_keep <- c("MESS_DATUM", "FX.Windspitze", "FM.Windgeschwindigkeit", 
+#                      "RSK.Niederschlagshoehe", "RSKF.Niederschlagsform", 
+#                      "SDK.Sonnenscheindauer", "SHK_TAG.Schneehoehe",
+#                      "NM.Bedeckungsgrad", "TMK.Lufttemperatur", "UPM.Relative_Feuchte",
+#                      "TXK.Lufttemperatur_Max", "TNK.Lufttemperatur_Min", 
+#                      "TGK.Lufttemperatur_5cm_min"
+# )
+# combined_df_subset <- combined_df[, columns_to_keep, drop = FALSE]
+
 # - - - - - - - - - 
+## get hourly data ####
+# - - - - - - - - -
 
-link <- selectDWD(id=4177, res="daily", var=c("kl"), per=c("historical", "recent"))
-weather_data <- dataDWD(link, force=NA, varnames=TRUE, read=TRUE)
-
-historic_last_date <- max(weather_data[[1]]$MESS_DATUM)
 bike_df_first_date <- as.POSIXct(min(bike_df$date))
 
-historic_weather_data <- weather_data[[1]][weather_data[[1]]$MESS_DATUM > bike_df_first_date, ]
-recent_weather_data <- weather_data[[2]][weather_data[[2]]$MESS_DATUM > historic_last_date, ]
+link <- selectDWD(id=4177, res="hourly", var=vars_hourly, per="recent")
+weather_recent <- dataDWD(link, force=NA, varnames=TRUE, read=TRUE)
+weather_recent_df <- Reduce(function(df1, df2) merge(df1, df2), weather_recent)
 
-combined_df <- rbind(historic_weather_data, recent_weather_data)
-combined_df$MESS_DATUM <- as.Date(combined_df$MESS_DATUM)
+link <- selectDWD(id=4177, res="hourly", var=vars_hourly, per="historical")
+weather_hist <- dataDWD(link, force=NA, varnames=TRUE, read=TRUE)
+weather_hist_df <- Reduce(function(df1, df2) merge(df1, df2), weather_hist)
 
-# Columns to keep
-columns_to_keep <- c("MESS_DATUM", "FX.Windspitze", "FM.Windgeschwindigkeit", 
-                     "RSK.Niederschlagshoehe", "RSKF.Niederschlagsform", 
-                     "SDK.Sonnenscheindauer", "SHK_TAG.Schneehoehe",
-                     "NM.Bedeckungsgrad", "TMK.Lufttemperatur", "UPM.Relative_Feuchte",
-                     "TXK.Lufttemperatur_Max", "TNK.Lufttemperatur_Min", 
-                     "TGK.Lufttemperatur_5cm_min"
-)
-combined_df_subset <- combined_df[, columns_to_keep, drop = FALSE]
+# only need historical data up to first timestamp in bicycle data
+weather_hist_df <- weather_hist_df[weather_hist_df$MESS_DATUM > bike_df_first_date, ]
+
+# only need recent data up to last timestamp in weather_hist_df
+weather_hist_last_date <- as.POSIXct(max(weather_hist_df$MESS_DATUM))
+weather_recent_df <- weather_recent_df[weather_recent_df$MESS_DATUM > weather_hist_last_date, ]
+
+# rbind weather_recent_df and weather_hist_df
+weather_df <- rbind(weather_hist_df, weather_recent_df)
+weather_df$MESS_DATUM <- as.Date(weather_df$MESS_DATUM)
+
+# remove irrelevabt cols
+columns_to_remove <- c("eor", "^QN")  # Remove columns starting with QN
+weather_df_clean <- weather_df[, !grepl(paste(columns_to_remove, collapse = "|"), names(weather_df)), drop = FALSE]
+
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+## weather column names ... ####
+
+# Stündliche Stationsmessungen der Sichtweite für Deutschland
+# https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/visibility/BESCHREIBUNG_obsgermany_climate_hourly_visibility_de.pdf
+
+# QN_8 = Qualitaetsniveau
+    # zB :
+    # QN = 3 : automatische Prüfung und Korrektur;
+    # QN = 5 : historische, subjektive Verfahren;
+    # QN = 7 : geprüft, gepflegt, nicht korrigiert; 
+
+# V_VV_I = Sichtweiten Index, Angabe wie die Messung erfolgte
+    # P=Beobachter(Person),I=Instrument, Fehlwerte=-999
+
+# V_VV = Sichtweite in Metern, Fehlwerte=-999
 
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # Additional Features ####
