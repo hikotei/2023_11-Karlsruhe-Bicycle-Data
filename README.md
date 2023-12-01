@@ -2,6 +2,19 @@
 
 ---
 
+| DWD Variable Name | Variable Name in Output | Aggregation Method |
+|----------------------------------|-------------------------------|---------------------------|
+| TT_TU.Lufttemperatur             | temperature                   | Mean                      |
+| RF_TU.Relative_Feuchte           | humidity                      | Mean                      |
+| F.Windgeschwindigkeit            | windspeed                     | Mean                      |
+| D.Windrichtung                   | wind_direction                | Mean                      |
+| V_VV.Sichtweite                  | visibility                    | Mean                      |
+| R1.Niederschlagshoehe            | precipitation                 | Sum                       |
+| SD_SO.Sonnenscheindauer          | sun                           | Sum                       |
+| FX_911.Windspitze_Stunde1        | windspeed_max                 | Maximum                   |
+| RS_IND.Niederschlagsindikator    | precip_indic                  | Median                    |
+| WRTR.Niederschlagsform           | precip_type                   | Median                    |
+
 ### Wetterdaten [(DWD variable descriptions)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/)
 
 #### Stündliche Stationsmessungen der Lufttemperatur und Luftfeuchte für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/air_temperature/BESCHREIBUNG_obsgermany_climate_hourly_air_temperature_de.pdf)
@@ -38,13 +51,13 @@
 
 #### Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/visibility/BESCHREIBUNG_obsgermany_climate_hourly_visibility_de.pdf)
 
+- `V_VV.Sichtweite`: Sichtweite in Metern, Fehlwerte=-999
+- `V_VV_I`: Sichtweiten Index, Angabe wie die Messung erfolgte
+  - P=Beobachter(Person),I=Instrument, Fehlwerte=-999
 - `QN_8`: Qualitaetsniveau
   - QN = 3: automatische Prüfung und Korrektur;
   - QN = 5: historische, subjektive Verfahren;
-  - QN = 7: geprüft, gepflegt, nicht korrigiert; 
-- `V_VV_I`: Sichtweiten Index, Angabe wie die Messung erfolgte
-  - P=Beobachter(Person),I=Instrument, Fehlwerte=-999
-- `V_VV.Sichtweite`: Sichtweite in Metern, Fehlwerte=-999
+  - QN = 7: geprüft, gepflegt, nicht korrigiert;
 
 ### Corr Plot
 ![alt text](./bikedata_corr_plot.png "Title")
