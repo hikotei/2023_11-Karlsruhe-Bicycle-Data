@@ -1,6 +1,10 @@
 # 2023_11-Karlsruhe-Bicycle-Data
 
----
+### Summary
+This repository focuses on analyzing bicycle data in Karlsruhe, Germany, and includes weather data from the German Weather Service (DWD). The weather data is processed using the rDWD package in R, and the README provides detailed information about the variables, their descriptions, and aggregation methods used.
+
+### Variable Aggregation
+The table below summarizes the aggregation methods applied to specific DWD variables in the output dataset:
 
 | DWD Variable Name | Variable Name in Output | Aggregation Method |
 |----------------------------------|-------------------------------|---------------------------|
@@ -15,7 +19,8 @@
 | RS_IND.Niederschlagsindikator    | precip_indic                  | Median                    |
 | WRTR.Niederschlagsform           | precip_type                   | Median                    |
 
-### Wetterdaten [(all DWD variable descriptions)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/)
+### Weather Data Descriptions
+Detailed descriptions of the weather variables used in this analysis, including links to their respective description pdfs from official DWD [mirror](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/).
 
 #### Stündliche Stationsmessungen der Lufttemperatur und Luftfeuchte für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/air_temperature/BESCHREIBUNG_obsgermany_climate_hourly_air_temperature_de.pdf)
 
