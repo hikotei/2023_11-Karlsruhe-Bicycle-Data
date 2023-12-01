@@ -15,8 +15,7 @@
 | RS_IND.Niederschlagsindikator    | precip_indic                  | Median                    |
 | WRTR.Niederschlagsform           | precip_type                   | Median                    |
 
-### Wetterdaten - DWD Variable Descriptions 
-[(all official docs from DWD)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/)
+### Wetterdaten - DWD Variable Descriptions [(all docs from DWD)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/)
 
 [Stündliche Stationsmessungen der Lufttemperatur und Luftfeuchte für Deutschland](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/air_temperature/BESCHREIBUNG_obsgermany_climate_hourly_air_temperature_de.pdf)
 
