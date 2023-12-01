@@ -78,32 +78,6 @@ vars_hourly = c("air_temperature", "sun", "precipitation", "visibility", "wind",
 # locdir()
 
 # - - - - - - - - - 
-## [old] kl code block ####
-# - - - - - - - - -
-
-# link <- selectDWD(id=4177, res="daily", var=c("kl"), per=c("historical", "recent"))
-# weather_data <- dataDWD(link, force=NA, varnames=TRUE, read=TRUE)
-#
-# historic_last_date <- max(weather_data[[1]]$MESS_DATUM)
-# bike_df_first_date <- as.POSIXct(min(bike_df$date))
-# 
-# historic_weather_data <- weather_data[[1]][weather_data[[1]]$MESS_DATUM > bike_df_first_date, ]
-# recent_weather_data <- weather_data[[2]][weather_data[[2]]$MESS_DATUM > historic_last_date, ]
-# 
-# combined_df <- rbind(historic_weather_data, recent_weather_data)
-# combined_df$MESS_DATUM <- as.Date(combined_df$MESS_DATUM)
-# 
-# # Columns to keep
-# columns_to_keep <- c("MESS_DATUM", "FX.Windspitze", "FM.Windgeschwindigkeit", 
-#                      "RSK.Niederschlagshoehe", "RSKF.Niederschlagsform", 
-#                      "SDK.Sonnenscheindauer", "SHK_TAG.Schneehoehe",
-#                      "NM.Bedeckungsgrad", "TMK.Lufttemperatur", "UPM.Relative_Feuchte",
-#                      "TXK.Lufttemperatur_Max", "TNK.Lufttemperatur_Min", 
-#                      "TGK.Lufttemperatur_5cm_min"
-# )
-# combined_df_subset <- combined_df[, columns_to_keep, drop = FALSE]
-
-# - - - - - - - - - 
 ## get hourly data ####
 # - - - - - - - - -
 
@@ -126,28 +100,49 @@ weather_recent_df <- weather_recent_df[weather_recent_df$MESS_DATUM > weather_hi
 
 # rbind weather_recent_df and weather_hist_df
 weather_df <- rbind(weather_hist_df, weather_recent_df)
-weather_df$MESS_DATUM <- as.Date(weather_df$MESS_DATUM)
 
 # remove irrelevabt cols
-columns_to_remove <- c("eor", "^QN")  # Remove columns starting with QN
+columns_to_remove <- c("eor", "^QN", "V_VV_I")  # Remove columns starting with QN
 weather_df_clean <- weather_df[, !grepl(paste(columns_to_remove, collapse = "|"), names(weather_df)), drop = FALSE]
 
-# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-## weather column names ... ####
+write.csv(weather_df_clean, "weather_df_clean.csv", row.names=FALSE)
 
-# Stündliche Stationsmessungen der Sichtweite für Deutschland
-# https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/visibility/BESCHREIBUNG_obsgermany_climate_hourly_visibility_de.pdf
+# - - - - - - - - - 
+## aggregate to daily data ####
+# - - - - - - - - -
 
-# QN_8 = Qualitaetsniveau
-    # zB :
-    # QN = 3 : automatische Prüfung und Korrektur;
-    # QN = 5 : historische, subjektive Verfahren;
-    # QN = 7 : geprüft, gepflegt, nicht korrigiert; 
+col_to_avg = c("TT_TU.Lufttemperatur", "RF_TU.Relative_Feuchte", 
+               "F.Windgeschwindigkeit", "D.Windrichtung", 
+               "V_VV.Sichtweite")
+col_to_sum = c("R1.Niederschlagshoehe", 
+               "SD_SO.Sonnenscheindauer")
+col_to_max = c("FX_911.Windspitze_Stunde1")
+col_to_median = c("RS_IND.Niederschlagsindikator", "WRTR.Niederschlagsform")
 
-# V_VV_I = Sichtweiten Index, Angabe wie die Messung erfolgte
-    # P=Beobachter(Person),I=Instrument, Fehlwerte=-999
+weather_df_daily <- weather_df_clean %>% group_by(date = as.Date(weather_df_clean$MESS_DATUM)) %>%
+    summarise(temperature = mean(TT_TU.Lufttemperatur), 
+              humidity = mean(RF_TU.Relative_Feuchte), 
+              windspeed = mean(F.Windgeschwindigkeit), 
+              winddirection = mean(D.Windrichtung), 
+              visibility = mean(V_VV.Sichtweite), 
+              
+              precipitation = sum(R1.Niederschlagshoehe, na.rm=TRUE),
+              sun = sum(SD_SO.Sonnenscheindauer),
+              
+              windspeed_max = max(FX_911.Windspitze_Stunde1),
+              
+              precip_indic = median(RS_IND.Niederschlagsindikator, na.rm=TRUE),
+              precip_type = median(WRTR.Niederschlagsform, na.rm=TRUE))
+  
+# - - - - - - - - - 
+## check NAs ####
+# - - - - - - - - -
 
-# V_VV = Sichtweite in Metern, Fehlwerte=-999
+# mainly for "precip_indic" and "precip_type" even after na.rm 
+# because for some days all values are NA 
+
+# colSums(is.na(weather_df_daily))
+# weather_df_daily[rowSums(is.na(weather_df_daily)) > 0, ]
 
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # Additional Features ####
@@ -200,13 +195,14 @@ for (year in years) {
 holiday_df_all$date <- as.Date(holiday_df_all$date)
 
 # Create a new column "is_holiday" in merged_df
-bike_df$is_holiday <- as.integer(bike_df$date %in% holiday_df_all$date)
+bike_and_holiday <- data.frame(bike_df)
+bike_and_holiday$is_holiday <- as.integer(bike_df$date %in% holiday_df_all$date)
 
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # Merge Data & Save ####
 
 # Use merge to combine the data frames based on the "MESS_DATUM" and "date" columns
-merged_df <- merge(bike_df, combined_df_subset, by.y = "MESS_DATUM", by.x = "date", all.y = TRUE)
+merged_df <- merge(bike_df, weather_df_daily, by.y = "MESS_DATUM", by.x = "date", all.y = TRUE)
 
 date_col_idx <- which(names(merged_df) == "date")
 merged_df[, -date_col_idx] <- sapply(merged_df[, -date_col_idx], as.numeric)
