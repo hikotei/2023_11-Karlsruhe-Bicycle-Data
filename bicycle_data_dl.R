@@ -225,7 +225,7 @@ merged_df_nodate <- merged_df[, -which(names(merged_df) == "date")]
 library(GGally)
 
 corr_plot <- ggcorr(merged_df_nodate, label=TRUE, label_size=3, label_round=2, 
-                    max_size=10, min_size=2, size=3, angle=0, hjust=0.6, nbreaks=7) +
+                    max_size=10, min_size=2, size=3, angle=0, hjust=0.6, nbreaks=10) +
     theme(
         legend.position = "bottom",  # Move the legend to the bottom
         legend.direction = "horizontal"  # Set the legend direction to horizontal
