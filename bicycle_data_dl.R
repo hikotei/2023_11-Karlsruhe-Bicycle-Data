@@ -120,7 +120,8 @@ col_to_max = c("FX_911.Windspitze_Stunde1")
 col_to_median = c("RS_IND.Niederschlagsindikator", "WRTR.Niederschlagsform")
 
 weather_df_daily <- weather_df_clean %>% group_by(date = as.Date(weather_df_clean$MESS_DATUM)) %>%
-    summarise(temperature = mean(TT_TU.Lufttemperatur), 
+    summarise(date = as.Date(mean(MESS_DATUM)), 
+              temperature = mean(TT_TU.Lufttemperatur), 
               humidity = mean(RF_TU.Relative_Feuchte), 
               windspeed = mean(F.Windgeschwindigkeit), 
               winddirection = mean(D.Windrichtung), 
@@ -133,7 +134,7 @@ weather_df_daily <- weather_df_clean %>% group_by(date = as.Date(weather_df_clea
               
               precip_indic = median(RS_IND.Niederschlagsindikator, na.rm=TRUE),
               precip_type = median(WRTR.Niederschlagsform, na.rm=TRUE))
-  
+
 # - - - - - - - - - 
 ## check NAs ####
 # - - - - - - - - -
@@ -202,7 +203,7 @@ bike_and_holiday$is_holiday <- as.integer(bike_df$date %in% holiday_df_all$date)
 # Merge Data & Save ####
 
 # Use merge to combine the data frames based on the "MESS_DATUM" and "date" columns
-merged_df <- merge(bike_df, weather_df_daily, by.y = "MESS_DATUM", by.x = "date", all.y = TRUE)
+merged_df <- merge(bike_df, weather_df_daily)
 
 date_col_idx <- which(names(merged_df) == "date")
 merged_df[, -date_col_idx] <- sapply(merged_df[, -date_col_idx], as.numeric)
