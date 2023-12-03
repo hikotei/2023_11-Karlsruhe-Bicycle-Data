@@ -70,6 +70,11 @@ Detailed descriptions of the weather variables used in this analysis, including 
 
 /callout **[ 🚧 UNDER CONSTRUCTION ]**
 
+### ToDos 2023.12.01
+- Schulferien in Baden Württemberg
+- Benchmark Modelle probieren / überlegen / unterschiedliche Komplexitäten etc
+- muss noch nicht probabilistisch sein
+
 ### Fragen zu R DWD
 - was bedeutet KL bei den variabeln? scheint eine Zusammenfassung von mehreren Wetterkennzahlen zu sein?
 - schien ganz praktisch zu sein alle variabeln in einem Link zu bekommen ... habe ich benutzt
