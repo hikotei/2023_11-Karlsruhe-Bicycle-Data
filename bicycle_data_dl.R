@@ -1,5 +1,5 @@
 rm(list = ls())
- v = getwd()
+cwd = getwd()
 
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # Load Packages ####
@@ -51,7 +51,7 @@ plot(bike_df, type="l")
 # - - - - - - - - - 
 # Look at 2018, 2019 since there is a large outlier in summer 2018
 
-year <- 2020
+year <- 2018
 df_yearly <- subset(bike_df, date >= as.Date(paste0(year, "-01-01")) & date <= as.Date(paste0(year+1, "-01-01")))
 
 marg <- 20
