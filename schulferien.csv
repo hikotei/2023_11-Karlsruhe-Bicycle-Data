@@ -1,0 +1,496 @@
+start,end,year,stateCode,name,slug
+2017-04-10,2017-04-21,2017,BY,osterferien bayern  2017,osterferien bayern  2017-2017-BY
+2017-06-06,2017-06-16,2017,BY,pfingstferien bayern  2017,pfingstferien bayern  2017-2017-BY
+2017-07-31,2017-09-11,2017,BY,sommerferien bayern  2017,sommerferien bayern  2017-2017-BY
+2017-10-28,2017-11-03,2017,BY,herbstferien bayern  2017,herbstferien bayern  2017-2017-BY
+2017-10-28,2017-11-22,2017,BY,herbstferien bayern 2017,herbstferien bayern 2017-2017-BY
+2017-12-26,2018-01-05,2017,BY,weihnachtsferien bayern  2017,weihnachtsferien bayern  2017-2017-BY
+2017-04-03,2017-04-13,2017,HE,osterferien hessen 2017,osterferien hessen 2017-2017-HE
+2017-07-03,2017-08-11,2017,HE,sommerferien hessen 2017,sommerferien hessen 2017-2017-HE
+2017-10-09,2017-10-20,2017,HE,herbstferien hessen 2017,herbstferien hessen 2017-2017-HE
+2017-12-27,2018-01-12,2017,HE,weihnachtsferien hessen 2017,weihnachtsferien hessen 2017-2017-HE
+2017-04-10,2017-04-21,2017,NW,osterferien nordrhein-westfalen 2017,osterferien nordrhein-westfalen 2017-2017-NW
+2017-06-06,2017-06-06,2017,NW,pfingstferien nordrhein-westfalen 2017 (beweglicher ferientag),pfingstferien nordrhein-westfalen 2017 (beweglicher ferientag)-2017-NW
+2017-07-17,2017-08-29,2017,NW,sommerferien nordrhein-westfalen 2017,sommerferien nordrhein-westfalen 2017-2017-NW
+2017-10-23,2017-11-03,2017,NW,herbstferien nordrhein-westfalen 2017,herbstferien nordrhein-westfalen 2017-2017-NW
+2017-12-27,2018-01-05,2017,NW,weihnachtsferien nordrhein-westfalen 2017,weihnachtsferien nordrhein-westfalen 2017-2017-NW
+2018-02-12,2018-02-16,2018,BY,winterferien bayern  2018,winterferien bayern  2018-2018-BY
+2018-03-26,2018-04-06,2018,BY,osterferien bayern  2018,osterferien bayern  2018-2018-BY
+2018-05-22,2018-06-01,2018,BY,pfingstferien bayern  2018,pfingstferien bayern  2018-2018-BY
+2018-07-30,2018-09-10,2018,BY,sommerferien bayern  2018,sommerferien bayern  2018-2018-BY
+2018-10-29,2018-11-02,2018,BY,herbstferien bayern  2018,herbstferien bayern  2018-2018-BY
+2018-10-29,2018-11-21,2018,BY,herbstferien bayern 2018 (beweglicher ferientag),herbstferien bayern 2018 (beweglicher ferientag)-2018-BY
+2018-12-24,2019-01-04,2018,BY,weihnachtsferien bayern  2018,weihnachtsferien bayern  2018-2018-BY
+2018-03-26,2018-04-06,2018,HE,osterferien hessen 2018,osterferien hessen 2018-2018-HE
+2018-06-25,2018-08-03,2018,HE,sommerferien hessen 2018,sommerferien hessen 2018-2018-HE
+2018-10-01,2018-10-12,2018,HE,herbstferien hessen 2018,herbstferien hessen 2018-2018-HE
+2018-12-24,2019-01-11,2018,HE,weihnachtsferien hessen 2018,weihnachtsferien hessen 2018-2018-HE
+2018-03-26,2018-04-06,2018,NW,osterferien nordrhein-westfalen 2018,osterferien nordrhein-westfalen 2018-2018-NW
+2018-05-22,2018-05-25,2018,NW,pfingstferien nordrhein-westfalen 2018 (beweglicher ferientag),pfingstferien nordrhein-westfalen 2018 (beweglicher ferientag)-2018-NW
+2018-07-16,2018-08-28,2018,NW,sommerferien nordrhein-westfalen 2018,sommerferien nordrhein-westfalen 2018-2018-NW
+2018-10-15,2018-10-26,2018,NW,herbstferien nordrhein-westfalen 2018,herbstferien nordrhein-westfalen 2018-2018-NW
+2018-12-21,2019-01-04,2018,NW,weihnachtsferien nordrhein-westfalen 2018,weihnachtsferien nordrhein-westfalen 2018-2018-NW
+2019-04-15,2019-04-27,2019,BW,osterferien baden-württemberg 2019,osterferien baden-württemberg 2019-2019-BW
+2019-06-11,2019-06-21,2019,BW,pfingstferien baden-württemberg 2019,pfingstferien baden-württemberg 2019-2019-BW
+2019-07-29,2019-09-10,2019,BW,sommerferien baden-württemberg 2019,sommerferien baden-württemberg 2019-2019-BW
+2019-10-28,2019-10-31,2019,BW,herbstferien baden-württemberg 2019,herbstferien baden-württemberg 2019-2019-BW
+2019-12-23,2020-01-04,2019,BW,weihnachtsferien baden-württemberg 2019,weihnachtsferien baden-württemberg 2019-2019-BW
+2019-04-15,2019-04-27,2019,BY,osterferien bayern  2019,osterferien bayern  2019-2019-BY
+2019-06-11,2019-06-21,2019,BY,pfingstferien bayern  2019,pfingstferien bayern  2019-2019-BY
+2019-07-29,2019-09-09,2019,BY,sommerferien bayern  2019,sommerferien bayern  2019-2019-BY
+2019-10-28,2019-10-31,2019,BY,herbstferien bayern  2019,herbstferien bayern  2019-2019-BY
+2019-10-28,2019-11-20,2019,BY,herbstferien bayern 2019 (beweglicher ferientag),herbstferien bayern 2019 (beweglicher ferientag)-2019-BY
+2019-12-23,2020-01-04,2019,BY,weihnachtsferien bayern  2019,weihnachtsferien bayern  2019-2019-BY
+2019-02-04,2019-02-09,2019,BE,winterferien berlin 2019,winterferien berlin 2019-2019-BE
+2019-04-15,2019-04-26,2019,BE,osterferien berlin 2019,osterferien berlin 2019-2019-BE
+2019-05-31,2019-05-31,2019,BE,pfingstferien berlin 2019 (beweglicher ferientag),pfingstferien berlin 2019 (beweglicher ferientag)-2019-BE
+2019-06-20,2019-08-02,2019,BE,sommerferien berlin 2019,sommerferien berlin 2019-2019-BE
+2019-10-04,2019-10-19,2019,BE,herbstferien berlin 2019,herbstferien berlin 2019-2019-BE
+2019-12-23,2020-01-04,2019,BE,weihnachtsferien berlin 2019,weihnachtsferien berlin 2019-2019-BE
+2019-02-04,2019-02-09,2019,BB,winterferien brandenburg 2019,winterferien brandenburg 2019-2019-BB
+2019-04-15,2019-04-26,2019,BB,osterferien brandenburg 2019,osterferien brandenburg 2019-2019-BB
+2019-06-20,2019-08-03,2019,BB,sommerferien brandenburg 2019,sommerferien brandenburg 2019-2019-BB
+2019-10-04,2019-10-18,2019,BB,herbstferien brandenburg 2019,herbstferien brandenburg 2019-2019-BB
+2019-12-23,2020-01-04,2019,BB,weihnachtsferien brandenburg 2019,weihnachtsferien brandenburg 2019-2019-BB
+2019-01-31,2019-02-01,2019,HB,winterferien bremen 2019,winterferien bremen 2019-2019-HB
+2019-04-06,2019-04-23,2019,HB,osterferien bremen 2019,osterferien bremen 2019-2019-HB
+2019-05-31,2019-05-31,2019,HB,pfingstferien bremen 2019 (beweglicher ferientag),pfingstferien bremen 2019 (beweglicher ferientag)-2019-HB
+2019-07-04,2019-08-14,2019,HB,sommerferien bremen 2019,sommerferien bremen 2019-2019-HB
+2019-10-04,2019-10-18,2019,HB,herbstferien bremen 2019,herbstferien bremen 2019-2019-HB
+2019-12-21,2020-01-06,2019,HB,weihnachtsferien bremen 2019,weihnachtsferien bremen 2019-2019-HB
+2019-03-04,2019-03-15,2019,HH,osterferien hamburg 2019 ,osterferien hamburg 2019 -2019-HH
+2019-05-13,2019-05-17,2019,HH,pfingstferien hamburg 2019 ,pfingstferien hamburg 2019 -2019-HH
+2019-06-27,2019-08-07,2019,HH,sommerferien hamburg 2019 ,sommerferien hamburg 2019 -2019-HH
+2019-10-04,2019-10-18,2019,HH,herbstferien hamburg 2019 ,herbstferien hamburg 2019 -2019-HH
+2019-12-20,2020-01-03,2019,HH,weihnachtsferien hamburg 2019 ,weihnachtsferien hamburg 2019 -2019-HH
+2019-04-15,2019-04-27,2019,HE,osterferien hessen 2019,osterferien hessen 2019-2019-HE
+2019-07-01,2019-08-09,2019,HE,sommerferien hessen 2019,sommerferien hessen 2019-2019-HE
+2019-09-30,2019-10-12,2019,HE,herbstferien hessen 2019,herbstferien hessen 2019-2019-HE
+2019-12-23,2020-01-11,2019,HE,weihnachtsferien hessen 2019,weihnachtsferien hessen 2019-2019-HE
+2019-02-04,2019-02-15,2019,MV,winterferien mecklenburg-vorpommern 2019,winterferien mecklenburg-vorpommern 2019-2019-MV
+2019-04-15,2019-04-24,2019,MV,osterferien mecklenburg-vorpommern 2019,osterferien mecklenburg-vorpommern 2019-2019-MV
+2019-05-31,2019-06-11,2019,MV,pfingstferien mecklenburg-vorpommern 2019 (beweglicher ferientag),pfingstferien mecklenburg-vorpommern 2019 (beweglicher ferientag)-2019-MV
+2019-07-01,2019-08-10,2019,MV,sommerferien mecklenburg-vorpommern 2019,sommerferien mecklenburg-vorpommern 2019-2019-MV
+2019-10-04,2019-10-12,2019,MV,herbstferien mecklenburg-vorpommern 2019,herbstferien mecklenburg-vorpommern 2019-2019-MV
+2019-12-23,2020-01-04,2019,MV,weihnachtsferien mecklenburg-vorpommern 2019,weihnachtsferien mecklenburg-vorpommern 2019-2019-MV
+2019-01-31,2019-02-01,2019,NI,winterferien niedersachsen 2019,winterferien niedersachsen 2019-2019-NI
+2019-04-08,2019-04-23,2019,NI,osterferien niedersachsen 2021,osterferien niedersachsen 2021-2019-NI
+2019-05-31,2019-05-31,2019,NI,pfingstferien niedersachsen 2019 (beweglicher ferientag),pfingstferien niedersachsen 2019 (beweglicher ferientag)-2019-NI
+2019-07-04,2019-08-14,2019,NI,sommerferien niedersachsen 2019,sommerferien niedersachsen 2019-2019-NI
+2019-10-04,2019-10-18,2019,NI,herbstferien niedersachsen 2019,herbstferien niedersachsen 2019-2019-NI
+2019-12-23,2020-01-06,2019,NI,weihnachtsferien niedersachsen 2019,weihnachtsferien niedersachsen 2019-2019-NI
+2019-04-15,2019-04-27,2019,NW,osterferien nordrhein-westfalen 2019,osterferien nordrhein-westfalen 2019-2019-NW
+2019-06-11,2019-06-11,2019,NW,pfingstferien nordrhein-westfalen 2019 (beweglicher ferientag),pfingstferien nordrhein-westfalen 2019 (beweglicher ferientag)-2019-NW
+2019-07-15,2019-08-27,2019,NW,sommerferien nordrhein-westfalen 2019,sommerferien nordrhein-westfalen 2019-2019-NW
+2019-10-14,2019-10-26,2019,NW,herbstferien nordrhein-westfalen 2019,herbstferien nordrhein-westfalen 2019-2019-NW
+2019-12-23,2020-01-06,2019,NW,weihnachtsferien nordrhein-westfalen 2019,weihnachtsferien nordrhein-westfalen 2019-2019-NW
+2019-02-25,2019-03-01,2019,RP,winterferien rheinland-pfalz 2019,winterferien rheinland-pfalz 2019-2019-RP
+2019-04-15,2019-04-30,2019,RP,osterferien rheinland-pfalz 2019,osterferien rheinland-pfalz 2019-2019-RP
+2019-07-01,2019-08-09,2019,RP,sommerferien rheinland-pfalz 2019,sommerferien rheinland-pfalz 2019-2019-RP
+2019-09-30,2019-10-11,2019,RP,herbstferien rheinland-pfalz 2019,herbstferien rheinland-pfalz 2019-2019-RP
+2019-12-23,2020-01-06,2019,RP,weihnachtsferien rheinland-pfalz 2019,weihnachtsferien rheinland-pfalz 2019-2019-RP
+2019-02-25,2019-03-05,2019,SL,winterferien saarland 2019,winterferien saarland 2019-2019-SL
+2019-04-17,2019-04-26,2019,SL,osterferien saarland 2019,osterferien saarland 2019-2019-SL
+2019-07-01,2019-08-09,2019,SL,sommerferien saarland 2019,sommerferien saarland 2019-2019-SL
+2019-10-07,2019-10-18,2019,SL,herbstferien saarland 2019,herbstferien saarland 2019-2019-SL
+2019-12-23,2020-01-03,2019,SL,weihnachtsferien saarland 2019,weihnachtsferien saarland 2019-2019-SL
+2019-02-18,2019-03-02,2019,SN,winterferien sachsen 2019,winterferien sachsen 2019-2019-SN
+2019-04-19,2019-04-26,2019,SN,osterferien sachsen 2019,osterferien sachsen 2019-2019-SN
+2019-05-31,2019-05-31,2019,SN,pfingstferien sachsen 2019 (beweglicher ferientag),pfingstferien sachsen 2019 (beweglicher ferientag)-2019-SN
+2019-07-08,2019-08-16,2019,SN,sommerferien sachsen 2019,sommerferien sachsen 2019-2019-SN
+2019-10-14,2019-10-25,2019,SN,herbstferien sachsen 2019,herbstferien sachsen 2019-2019-SN
+2019-12-23,2020-01-03,2019,SN,weihnachtsferien sachsen 2021,weihnachtsferien sachsen 2021-2019-SN
+2019-02-11,2019-02-15,2019,ST,winterferien sachsen-anhalt 2019,winterferien sachsen-anhalt 2019-2019-ST
+2019-04-18,2019-04-30,2019,ST,osterferien sachsen-anhalt 2019,osterferien sachsen-anhalt 2019-2019-ST
+2019-05-31,2019-06-01,2019,ST,pfingstferien sachsen-anhalt 2019,pfingstferien sachsen-anhalt 2019-2019-ST
+2019-07-04,2019-08-14,2019,ST,sommerferien sachsen-anhalt 2019,sommerferien sachsen-anhalt 2019-2019-ST
+2019-10-04,2019-10-11,2019,ST,herbstferien sachsen-anhalt 2019,herbstferien sachsen-anhalt 2019-2019-ST
+2019-12-23,2020-01-04,2019,ST,weihnachtsferien sachsen-anhalt 2019,weihnachtsferien sachsen-anhalt 2019-2019-ST
+2019-04-04,2019-04-18,2019,SH,osterferien schleswig-holstein 2019,osterferien schleswig-holstein 2019-2019-SH
+2019-05-31,2019-05-31,2019,SH,pfingstferien schleswig-holstein 2019,pfingstferien schleswig-holstein 2019-2019-SH
+2019-07-01,2019-08-10,2019,SH,sommerferien schleswig-holstein 2019,sommerferien schleswig-holstein 2019-2019-SH
+2019-10-04,2019-10-18,2019,SH,herbstferien schleswig-holstein 2019,herbstferien schleswig-holstein 2019-2019-SH
+2019-12-23,2020-01-06,2019,SH,weihnachtsferien schleswig-holstein 2019,weihnachtsferien schleswig-holstein 2019-2019-SH
+2019-02-11,2019-02-15,2019,TH,winterferien thüringen 2019,winterferien thüringen 2019-2019-TH
+2019-04-15,2019-04-27,2019,TH,osterferien thüringen 2019,osterferien thüringen 2019-2019-TH
+2019-05-31,2019-05-31,2019,TH,pfingstferien thüringen 2019 (beweglicher ferientag),pfingstferien thüringen 2019 (beweglicher ferientag)-2019-TH
+2019-07-08,2019-08-17,2019,TH,sommerferien thüringen 2019,sommerferien thüringen 2019-2019-TH
+2019-10-07,2019-10-19,2019,TH,herbstferien thüringen 2019,herbstferien thüringen 2019-2019-TH
+2019-12-23,2020-01-03,2019,TH,weihnachtsferien thüringen 2019,weihnachtsferien thüringen 2019-2019-TH
+2020-04-06,2020-04-18,2020,BW,osterferien baden-württemberg 2020,osterferien baden-württemberg 2020-2020-BW
+2020-06-02,2020-06-13,2020,BW,pfingstferien baden-württemberg 2020,pfingstferien baden-württemberg 2020-2020-BW
+2020-07-30,2020-09-12,2020,BW,sommerferien baden-württemberg 2020,sommerferien baden-württemberg 2020-2020-BW
+2020-10-26,2020-10-30,2020,BW,herbstferien baden-württemberg 2020,herbstferien baden-württemberg 2020-2020-BW
+2020-10-31,2020-10-31,2020,BW,herbstferien beweglicher ferientag baden-württemberg 2020,herbstferien beweglicher ferientag baden-württemberg 2020-2020-BW
+2020-12-23,2021-01-09,2020,BW,weihnachtsferien baden-württemberg 2020,weihnachtsferien baden-württemberg 2020-2020-BW
+2020-03-04,2020-03-08,2020,BY,winterferien bayern  2019,winterferien bayern  2019-2020-BY
+2020-02-24,2020-02-28,2020,BY,winterferien bayern  2020,winterferien bayern  2020-2020-BY
+2020-04-06,2020-04-18,2020,BY,osterferien bayern  2020,osterferien bayern  2020-2020-BY
+2020-06-02,2020-06-13,2020,BY,pfingstferien bayern  2020,pfingstferien bayern  2020-2020-BY
+2020-07-27,2020-09-07,2020,BY,sommerferien bayern  2020,sommerferien bayern  2020-2020-BY
+2020-10-31,2020-11-06,2020,BY,herbstferien bayern  2020,herbstferien bayern  2020-2020-BY
+2020-11-18,2020-11-18,2020,BY,herbstferien bayern 2020 (beweglicher ferientag),herbstferien bayern 2020 (beweglicher ferientag)-2020-BY
+2020-12-23,2021-01-09,2020,BY,weihnachtsferien bayern  2020,weihnachtsferien bayern  2020-2020-BY
+2020-02-03,2020-02-08,2020,BE,winterferien berlin 2020,winterferien berlin 2020-2020-BE
+2020-04-06,2020-04-17,2020,BE,osterferien berlin 2020,osterferien berlin 2020-2020-BE
+2020-05-08,2020-05-08,2020,BE,pfingstferien berlin 2020 (beweglicher ferientag),pfingstferien berlin 2020 (beweglicher ferientag)-2020-BE
+2020-05-22,2020-05-22,2020,BE,pfingstferien berlin 2020 (beweglicher ferientag 2),pfingstferien berlin 2020 (beweglicher ferientag 2)-2020-BE
+2020-06-25,2020-08-07,2020,BE,sommerferien berlin 2020,sommerferien berlin 2020-2020-BE
+2020-10-12,2020-10-24,2020,BE,herbstferien berlin 2020,herbstferien berlin 2020-2020-BE
+2020-12-21,2021-01-02,2020,BE,weihnachtsferien berlin 2020,weihnachtsferien berlin 2020-2020-BE
+2020-02-03,2020-02-08,2020,BB,winterferien brandenburg 2020,winterferien brandenburg 2020-2020-BB
+2020-04-06,2020-04-17,2020,BB,osterferien brandenburg 2020,osterferien brandenburg 2020-2020-BB
+2020-06-25,2020-08-08,2020,BB,sommerferien brandenburg 2020,sommerferien brandenburg 2020-2020-BB
+2020-10-12,2020-10-24,2020,BB,herbstferien brandenburg 2020,herbstferien brandenburg 2020-2020-BB
+2020-12-21,2021-01-02,2020,BB,weihnachtsferien brandenburg 2020,weihnachtsferien brandenburg 2020-2020-BB
+2020-02-03,2020-02-08,2020,HB,winterferien bremen 2020,winterferien bremen 2020-2020-HB
+2020-04-06,2020-04-17,2020,HB,osterferien bremen 2020,osterferien bremen 2020-2020-HB
+2020-05-22,2020-05-22,2020,HB,pfingstferien bremen 2020 (beweglicher ferientag),pfingstferien bremen 2020 (beweglicher ferientag)-2020-HB
+2020-07-16,2020-08-26,2020,HB,sommerferien bremen 2020,sommerferien bremen 2020-2020-HB
+2020-10-12,2020-10-24,2020,HB,herbstferien bremen 2020,herbstferien bremen 2020-2020-HB
+2020-12-23,2021-01-08,2020,HB,weihnachtsferien bremen 2020,weihnachtsferien bremen 2020-2020-HB
+2020-01-31,2020-01-31,2020,HH,winterferien hamburg 2020 (beweglicher ferientag),winterferien hamburg 2020 (beweglicher ferientag)-2020-HH
+2020-03-02,2020-03-13,2020,HH,osterferien hamburg 2020 ,osterferien hamburg 2020 -2020-HH
+2020-05-18,2020-05-22,2020,HH,pfingstferien hamburg 2020 ,pfingstferien hamburg 2020 -2020-HH
+2020-06-25,2020-08-05,2020,HH,sommerferien hamburg 2020 ,sommerferien hamburg 2020 -2020-HH
+2020-10-05,2020-10-16,2020,HH,herbstferien hamburg 2020 ,herbstferien hamburg 2020 -2020-HH
+2020-12-21,2021-01-04,2020,HH,weihnachtsferien hamburg 2020 ,weihnachtsferien hamburg 2020 -2020-HH
+2020-04-06,2020-04-18,2020,HE,osterferien hessen 2020,osterferien hessen 2020-2020-HE
+2020-07-06,2020-08-14,2020,HE,sommerferien hessen 2020,sommerferien hessen 2020-2020-HE
+2020-10-05,2020-10-17,2020,HE,herbstferien hessen 2020,herbstferien hessen 2020-2020-HE
+2020-12-21,2021-01-09,2020,HE,weihnachtsferien hessen 2020,weihnachtsferien hessen 2020-2020-HE
+2020-02-10,2020-02-21,2020,MV,winterferien mecklenburg-vorpommern 2020,winterferien mecklenburg-vorpommern 2020-2020-MV
+2020-04-06,2020-04-15,2020,MV,osterferien mecklenburg-vorpommern 2020,osterferien mecklenburg-vorpommern 2020-2020-MV
+2020-05-22,2020-05-22,2020,MV,pfingstferien mecklenburg-vorpommern 2020 (beweglicher ferientag),pfingstferien mecklenburg-vorpommern 2020 (beweglicher ferientag)-2020-MV
+2020-05-29,2020-06-02,2020,MV,pfingstferien mecklenburg-vorpommern 2020,pfingstferien mecklenburg-vorpommern 2020-2020-MV
+2020-06-22,2020-08-01,2020,MV,sommerferien mecklenburg-vorpommern 2020,sommerferien mecklenburg-vorpommern 2020-2020-MV
+2020-10-05,2020-10-10,2020,MV,herbstferien mecklenburg-vorpommern 2020,herbstferien mecklenburg-vorpommern 2020-2020-MV
+2020-11-02,2020-11-02,2020,MV,herbstferien mecklenburg-vorpommern 2020 (beweglicher ferientag),herbstferien mecklenburg-vorpommern 2020 (beweglicher ferientag)-2020-MV
+2020-12-21,2021-01-02,2020,MV,weihnachtsferien mecklenburg-vorpommern 2020,weihnachtsferien mecklenburg-vorpommern 2020-2020-MV
+2020-02-03,2020-02-04,2020,NI,winterferien niedersachsen 2020,winterferien niedersachsen 2020-2020-NI
+2020-03-30,2020-04-14,2020,NI,osterferien niedersachsen 2020,osterferien niedersachsen 2020-2020-NI
+2020-05-22,2020-05-22,2020,NI,pfingstferien niedersachsen 2020 (beweglicher ferientag),pfingstferien niedersachsen 2020 (beweglicher ferientag)-2020-NI
+2020-07-16,2020-08-26,2020,NI,sommerferien niedersachsen 2020,sommerferien niedersachsen 2020-2020-NI
+2020-10-12,2020-10-23,2020,NI,herbstferien niedersachsen 2020,herbstferien niedersachsen 2020-2020-NI
+2020-12-21,2021-01-08,2020,NI,weihnachtsferien niedersachsen 2020,weihnachtsferien niedersachsen 2020-2020-NI
+2020-04-06,2020-04-18,2020,NW,osterferien nordrhein-westfalen 2020,osterferien nordrhein-westfalen 2020-2020-NW
+2020-06-02,2020-06-02,2020,NW,pfingstferien nordrhein-westfalen 2020 (beweglicher ferientag),pfingstferien nordrhein-westfalen 2020 (beweglicher ferientag)-2020-NW
+2020-06-29,2020-08-11,2020,NW,sommerferien nordrhein-westfalen 2020,sommerferien nordrhein-westfalen 2020-2020-NW
+2020-10-12,2020-10-24,2020,NW,herbstferien nordrhein-westfalen 2020,herbstferien nordrhein-westfalen 2020-2020-NW
+2020-12-21,2021-01-06,2020,NW,weihnachtsferien nordrhein-westfalen 2020,weihnachtsferien nordrhein-westfalen 2020-2020-NW
+2020-02-17,2020-02-21,2020,RP,winterferien rheinland-pfalz 2020,winterferien rheinland-pfalz 2020-2020-RP
+2020-04-09,2020-04-17,2020,RP,osterferien rheinland-pfalz 2020,osterferien rheinland-pfalz 2020-2020-RP
+2020-07-06,2020-08-14,2020,RP,sommerferien rheinland-pfalz 2020,sommerferien rheinland-pfalz 2020-2020-RP
+2020-10-12,2020-10-23,2020,RP,herbstferien rheinland-pfalz 2020,herbstferien rheinland-pfalz 2020-2020-RP
+2020-12-21,2020-12-31,2020,RP,weihnachtsferien rheinland-pfalz 2020,weihnachtsferien rheinland-pfalz 2020-2020-RP
+2020-02-17,2020-02-25,2020,SL,winterferien saarland 2020,winterferien saarland 2020-2020-SL
+2020-04-14,2020-04-24,2020,SL,osterferien saarland 2020,osterferien saarland 2020-2020-SL
+2020-07-06,2020-08-14,2020,SL,sommerferien saarland 2020,sommerferien saarland 2020-2020-SL
+2020-10-12,2020-10-23,2020,SL,herbstferien saarland 2020,herbstferien saarland 2020-2020-SL
+2020-12-21,2020-12-31,2020,SL,weihnachtsferien saarland 2020,weihnachtsferien saarland 2020-2020-SL
+2020-02-10,2020-02-22,2020,SN,winterferien sachsen 2020,winterferien sachsen 2020-2020-SN
+2020-04-10,2020-04-18,2020,SN,osterferien sachsen 2020,osterferien sachsen 2020-2020-SN
+2020-05-22,2020-05-22,2020,SN,pfingstferien sachsen 2020 (beweglicher ferientag),pfingstferien sachsen 2020 (beweglicher ferientag)-2020-SN
+2020-07-20,2020-08-28,2020,SN,sommerferien sachsen 2020,sommerferien sachsen 2020-2020-SN
+2020-10-19,2020-10-31,2020,SN,herbstferien sachsen 2020,herbstferien sachsen 2020-2020-SN
+2020-12-19,2021-01-02,2020,SN,weihnachtsferien sachsen 2020,weihnachtsferien sachsen 2020-2020-SN
+2020-02-10,2020-02-14,2020,ST,winterferien sachsen-anhalt 2020,winterferien sachsen-anhalt 2020-2020-ST
+2020-04-06,2020-04-11,2020,ST,osterferien sachsen-anhalt 2020,osterferien sachsen-anhalt 2020-2020-ST
+2020-05-18,2020-05-30,2020,ST,pfingstferien sachsen-anhalt 2020,pfingstferien sachsen-anhalt 2020-2020-ST
+2020-07-16,2020-08-26,2020,ST,sommerferien sachsen-anhalt 2020,sommerferien sachsen-anhalt 2020-2020-ST
+2020-10-19,2020-10-24,2020,ST,herbstferien sachsen-anhalt 2020,herbstferien sachsen-anhalt 2020-2020-ST
+2020-12-21,2021-01-10,2020,ST,weihnachtsferien sachsen-anhalt 2020,weihnachtsferien sachsen-anhalt 2020-2020-ST
+2020-03-30,2020-04-17,2020,SH,osterferien schleswig-holstein 2020,osterferien schleswig-holstein 2020-2020-SH
+2020-05-22,2020-05-22,2020,SH,pfingstferien schleswig-holstein 2020 (beweglicher ferientag),pfingstferien schleswig-holstein 2020 (beweglicher ferientag)-2020-SH
+2020-06-29,2020-08-08,2020,SH,sommerferien schleswig-holstein 2020,sommerferien schleswig-holstein 2020-2020-SH
+2020-10-05,2020-10-17,2020,SH,herbstferien schleswig-holstein 2020,herbstferien schleswig-holstein 2020-2020-SH
+2020-12-19,2021-01-06,2020,SH,weihnachtsferien schleswig-holstein 2020,weihnachtsferien schleswig-holstein 2020-2020-SH
+2020-02-10,2020-02-14,2020,TH,winterferien thüringen 2020,winterferien thüringen 2020-2020-TH
+2020-04-06,2020-04-18,2020,TH,osterferien thüringen 2020,osterferien thüringen 2020-2020-TH
+2020-05-22,2020-05-22,2020,TH,pfingstferien thüringen 2020 (beweglicher ferientag),pfingstferien thüringen 2020 (beweglicher ferientag)-2020-TH
+2020-07-20,2020-08-29,2020,TH,sommerferien thüringen 2020,sommerferien thüringen 2020-2020-TH
+2020-10-17,2020-10-30,2020,TH,herbstferien thüringen 2020,herbstferien thüringen 2020-2020-TH
+2020-12-23,2021-01-02,2020,TH,weihnachtsferien thüringen 2020,weihnachtsferien thüringen 2020-2020-TH
+2021-04-06,2021-04-10,2021,BW,osterferien baden-württemberg 2021,osterferien baden-württemberg 2021-2021-BW
+2021-05-25,2021-06-05,2021,BW,pfingstferien baden-württemberg 2021,pfingstferien baden-württemberg 2021-2021-BW
+2021-07-29,2021-09-11,2021,BW,sommerferien baden-württemberg 2021,sommerferien baden-württemberg 2021-2021-BW
+2021-11-02,2021-11-06,2021,BW,herbstferien baden-württemberg 2021,herbstferien baden-württemberg 2021-2021-BW
+2021-12-23,2022-01-08,2021,BW,weihnachtsferien baden-württemberg 2021,weihnachtsferien baden-württemberg 2021-2021-BW
+2021-03-29,2021-04-10,2021,BY,osterferien bayern 2021,osterferien bayern 2021-2021-BY
+2021-05-25,2021-06-04,2021,BY,pfingstferien bayern 2021,pfingstferien bayern 2021-2021-BY
+2021-07-30,2021-09-13,2021,BY,sommerferien bayern 2021,sommerferien bayern 2021-2021-BY
+2021-11-02,2021-11-05,2021,BY,herbstferien bayern 2021,herbstferien bayern 2021-2021-BY
+2021-11-17,2021-11-17,2021,BY,herbstferien bayern 2021 (beweglicher ferientag),herbstferien bayern 2021 (beweglicher ferientag)-2021-BY
+2021-12-24,2022-01-08,2021,BY,weihnachtsferien bayern 2021,weihnachtsferien bayern 2021-2021-BY
+2021-02-01,2021-02-06,2021,BE,winterferien berlin 2021,winterferien berlin 2021-2021-BE
+2021-03-29,2021-04-10,2021,BE,osterferien berlin 2021,osterferien berlin 2021-2021-BE
+2021-05-14,2021-05-14,2021,BE,pfingstferien berlin 2021 (beweglicher ferientag),pfingstferien berlin 2021 (beweglicher ferientag)-2021-BE
+2021-06-24,2021-08-06,2021,BE,sommerferien berlin 2021,sommerferien berlin 2021-2021-BE
+2021-10-11,2021-10-23,2021,BE,herbstferien berlin 2021,herbstferien berlin 2021-2021-BE
+2021-12-23,2021-12-31,2021,BE,weihnachtsferien berlin 2021,weihnachtsferien berlin 2021-2021-BE
+2021-02-01,2021-02-06,2021,BB,winterferien brandenburg 2021,winterferien brandenburg 2021-2021-BB
+2021-03-29,2021-04-09,2021,BB,osterferien brandenburg 2021,osterferien brandenburg 2021-2021-BB
+2021-06-24,2021-08-07,2021,BB,sommerferien brandenburg 2021,sommerferien brandenburg 2021-2021-BB
+2021-10-11,2021-10-23,2021,BB,herbstferien brandenburg 2021,herbstferien brandenburg 2021-2021-BB
+2021-12-23,2021-12-31,2021,BB,weihnachtsferien brandenburg 2021,weihnachtsferien brandenburg 2021-2021-BB
+2021-02-01,2021-02-02,2021,HB,winterferien bremen 2021,winterferien bremen 2021-2021-HB
+2021-03-27,2021-04-10,2021,HB,osterferien bremen 2021,osterferien bremen 2021-2021-HB
+2021-05-14,2021-05-14,2021,HB,pfingstferien bremen 2021 (beweglicher ferientag),pfingstferien bremen 2021 (beweglicher ferientag)-2021-HB
+2021-07-22,2021-09-01,2021,HB,sommerferien bremen 2021,sommerferien bremen 2021-2021-HB
+2021-10-18,2021-10-30,2021,HB,herbstferien bremen 2021,herbstferien bremen 2021-2021-HB
+2021-12-23,2022-01-08,2021,HB,weihnachtsferien bremen 2021,weihnachtsferien bremen 2021-2021-HB
+2021-01-29,2021-01-29,2021,HH,winterferien hamburg 2021 (beweglicher ferientag),winterferien hamburg 2021 (beweglicher ferientag)-2021-HH
+2021-03-01,2021-03-12,2021,HH,osterferien hamburg 2021,osterferien hamburg 2021-2021-HH
+2021-05-10,2021-05-14,2021,HH,pfingstferien hamburg 2021,pfingstferien hamburg 2021-2021-HH
+2021-06-24,2021-08-04,2021,HH,sommerferien hamburg 2021,sommerferien hamburg 2021-2021-HH
+2021-10-04,2021-10-15,2021,HH,herbstferien hamburg 2021,herbstferien hamburg 2021-2021-HH
+2021-12-23,2022-01-04,2021,HH,weihnachtsferien hamburg 2021,weihnachtsferien hamburg 2021-2021-HH
+2021-04-06,2021-04-16,2021,HE,osterferien hessen 2021,osterferien hessen 2021-2021-HE
+2021-07-19,2021-08-27,2021,HE,sommerferien hessen 2021,sommerferien hessen 2021-2021-HE
+2021-10-11,2021-10-23,2021,HE,herbstferien hessen 2021,herbstferien hessen 2021-2021-HE
+2021-12-23,2022-01-08,2021,HE,weihnachtsferien hessen 2021,weihnachtsferien hessen 2021-2021-HE
+2021-02-06,2021-02-18,2021,MV,winterferien mecklenburg-vorpommern 2021,winterferien mecklenburg-vorpommern 2021-2021-MV
+2021-02-19,2021-02-19,2021,MV,winterferien mecklenburg-vorpommern 2021 (beweglicher ferientag),winterferien mecklenburg-vorpommern 2021 (beweglicher ferientag)-2021-MV
+2021-03-29,2021-04-07,2021,MV,osterferien mecklenburg-vorpommern 2021,osterferien mecklenburg-vorpommern 2021-2021-MV
+2021-05-14,2021-05-14,2021,MV,pfingstferien mecklenburg-vorpommern 2021 (beweglicher ferientag),pfingstferien mecklenburg-vorpommern 2021 (beweglicher ferientag)-2021-MV
+2021-05-21,2021-05-25,2021,MV,pfingstferien mecklenburg-vorpommern 2021,pfingstferien mecklenburg-vorpommern 2021-2021-MV
+2021-06-21,2021-07-31,2021,MV,sommerferien mecklenburg-vorpommern 2021,sommerferien mecklenburg-vorpommern 2021-2021-MV
+2021-10-02,2021-10-09,2021,MV,herbstferien mecklenburg-vorpommern 2021,herbstferien mecklenburg-vorpommern 2021-2021-MV
+2021-11-01,2021-11-01,2021,MV,herbstferien mecklenburg-vorpommern 2021 (beweglicher ferientag),herbstferien mecklenburg-vorpommern 2021 (beweglicher ferientag)-2021-MV
+2021-12-22,2021-12-31,2021,MV,weihnachtsferien mecklenburg-vorpommern 2021,weihnachtsferien mecklenburg-vorpommern 2021-2021-MV
+2021-02-01,2021-02-02,2021,NI,winterferien niedersachsen 2021,winterferien niedersachsen 2021-2021-NI
+2021-03-29,2021-04-09,2021,NI,osterferien niedersachsen 2021,osterferien niedersachsen 2021-2021-NI
+2021-05-14,2021-05-14,2021,NI,pfingstferien niedersachsen 2021 (beweglicher ferientag),pfingstferien niedersachsen 2021 (beweglicher ferientag)-2021-NI
+2021-07-22,2021-09-01,2021,NI,sommerferien niedersachsen 2021,sommerferien niedersachsen 2021-2021-NI
+2021-10-18,2021-10-29,2021,NI,herbstferien niedersachsen 2021,herbstferien niedersachsen 2021-2021-NI
+2021-12-23,2022-01-07,2021,NI,weihnachtsferien niedersachsen 2021,weihnachtsferien niedersachsen 2021-2021-NI
+2021-03-29,2021-04-10,2021,NW,osterferien nordrhein-westfalen 2021,osterferien nordrhein-westfalen 2021-2021-NW
+2021-05-25,2021-05-25,2021,NW,pfingstferien nordrhein-westfalen 2021 (beweglicher ferientag),pfingstferien nordrhein-westfalen 2021 (beweglicher ferientag)-2021-NW
+2021-07-05,2021-08-17,2021,NW,sommerferien nordrhein-westfalen 2021,sommerferien nordrhein-westfalen 2021-2021-NW
+2021-10-11,2021-10-23,2021,NW,herbstferien nordrhein-westfalen 2021,herbstferien nordrhein-westfalen 2021-2021-NW
+2021-12-24,2022-01-08,2021,NW,weihnachtsferien nordrhein-westfalen 2021,weihnachtsferien nordrhein-westfalen 2021-2021-NW
+2021-03-29,2021-04-06,2021,RP,osterferien rheinland-pfalz 2021,osterferien rheinland-pfalz 2021-2021-RP
+2021-05-25,2021-06-02,2021,RP,pfingstferien rheinland-pfalz 2021,pfingstferien rheinland-pfalz 2021-2021-RP
+2021-07-19,2021-08-27,2021,RP,sommerferien rheinland-pfalz 2021,sommerferien rheinland-pfalz 2021-2021-RP
+2021-10-11,2021-10-22,2021,RP,herbstferien rheinland-pfalz 2021,herbstferien rheinland-pfalz 2021-2021-RP
+2021-12-23,2021-12-31,2021,RP,weihnachtsferien rheinland-pfalz 2021,weihnachtsferien rheinland-pfalz 2021-2021-RP
+2021-02-15,2021-02-19,2021,SL,winterferien saarland 2021,winterferien saarland 2021-2021-SL
+2021-03-29,2021-04-07,2021,SL,osterferien saarland 2021,osterferien saarland 2021-2021-SL
+2021-05-25,2021-05-28,2021,SL,pfingstferien saarland 2021,pfingstferien saarland 2021-2021-SL
+2021-07-19,2021-08-27,2021,SL,sommerferien saarland 2021,sommerferien saarland 2021-2021-SL
+2021-10-18,2021-10-29,2021,SL,herbstferien saarland 2021,herbstferien saarland 2021-2021-SL
+2021-12-23,2022-01-03,2021,SL,weihnachtsferien saarland 2021,weihnachtsferien saarland 2021-2021-SL
+2021-02-01,2021-02-07,2021,SN,winterferien sachsen 2021,winterferien sachsen 2021-2021-SN
+2021-03-27,2021-04-10,2021,SN,osterferien sachsen 2021,osterferien sachsen 2021-2021-SN
+2021-05-14,2021-05-14,2021,SN,pfingstferien sachsen 2021 (beweglicher ferientag),pfingstferien sachsen 2021 (beweglicher ferientag)-2021-SN
+2021-07-26,2021-09-03,2021,SN,sommerferien sachsen 2021,sommerferien sachsen 2021-2021-SN
+2021-10-18,2021-10-30,2021,SN,herbstferien sachsen 2021,herbstferien sachsen 2021-2021-SN
+2021-12-23,2022-01-01,2021,SN,weihnachtsferien sachsen 2021,weihnachtsferien sachsen 2021-2021-SN
+2021-02-08,2021-02-13,2021,ST,winterferien sachsen-anhalt 2021,winterferien sachsen-anhalt 2021-2021-ST
+2021-03-29,2021-04-03,2021,ST,osterferien sachsen-anhalt 2021,osterferien sachsen-anhalt 2021-2021-ST
+2021-05-10,2021-05-22,2021,ST,pfingstferien sachsen-anhalt 2021,pfingstferien sachsen-anhalt 2021-2021-ST
+2021-07-22,2021-09-01,2021,ST,sommerferien sachsen-anhalt 2021,sommerferien sachsen-anhalt 2021-2021-ST
+2021-10-25,2021-10-30,2021,ST,herbstferien sachsen-anhalt 2021,herbstferien sachsen-anhalt 2021-2021-ST
+2021-12-22,2022-01-08,2021,ST,weihnachtsferien sachsen-anhalt 2021,weihnachtsferien sachsen-anhalt 2021-2021-ST
+2021-04-01,2021-04-16,2021,SH,osterferien schleswig-holstein 2021,osterferien schleswig-holstein 2021-2021-SH
+2021-05-14,2021-05-15,2021,SH,pfingstferien schleswig-holstein 2021,pfingstferien schleswig-holstein 2021-2021-SH
+2021-06-21,2021-07-31,2021,SH,sommerferien schleswig-holstein 2021,sommerferien schleswig-holstein 2021-2021-SH
+2021-10-04,2021-10-16,2021,SH,herbstferien schleswig-holstein 2021,herbstferien schleswig-holstein 2021-2021-SH
+2021-12-23,2022-01-08,2021,SH,weihnachtsferien schleswig-holstein 2021,weihnachtsferien schleswig-holstein 2021-2021-SH
+2021-01-25,2021-01-30,2021,TH,winterferien thüringen 2021,winterferien thüringen 2021-2021-TH
+2021-03-29,2021-04-10,2021,TH,osterferien thüringen 2021,osterferien thüringen 2021-2021-TH
+2021-05-14,2021-05-14,2021,TH,pfingstferien thüringen 2021 (beweglicher ferientag),pfingstferien thüringen 2021 (beweglicher ferientag)-2021-TH
+2021-07-26,2021-09-04,2021,TH,sommerferien thüringen 2021,sommerferien thüringen 2021-2021-TH
+2021-10-25,2021-11-06,2021,TH,herbstferien thüringen 2021,herbstferien thüringen 2021-2021-TH
+2021-12-23,2021-12-31,2021,TH,weihnachtsferien thüringen 2021,weihnachtsferien thüringen 2021-2021-TH
+2022-04-19,2022-04-23,2022,BW,osterferien baden-württemberg 2022,osterferien baden-württemberg 2022-2022-BW
+2022-06-07,2022-06-18,2022,BW,pfingstferien baden-württemberg 2022,pfingstferien baden-württemberg 2022-2022-BW
+2022-07-28,2022-09-10,2022,BW,sommerferien baden-württemberg 2022,sommerferien baden-württemberg 2022-2022-BW
+2022-10-31,2022-10-31,2022,BW,herbstferien baden-württemberg 2022 (beweglicher ferientag),herbstferien baden-württemberg 2022 (beweglicher ferientag)-2022-BW
+2022-11-02,2022-11-04,2022,BW,herbstferien baden-württemberg 2022,herbstferien baden-württemberg 2022-2022-BW
+2022-12-21,2023-01-07,2022,BW,weihnachtsferien baden-württemberg 2022,weihnachtsferien baden-württemberg 2022-2022-BW
+2022-02-28,2022-03-04,2022,BY,winterferien bayern 2022,winterferien bayern 2022-2022-BY
+2022-04-11,2022-04-23,2022,BY,osterferien bayern 2022,osterferien bayern 2022-2022-BY
+2022-06-07,2022-06-18,2022,BY,pfingstferien bayern 2022,pfingstferien bayern 2022-2022-BY
+2022-08-01,2022-09-12,2022,BY,sommerferien bayern 2022,sommerferien bayern 2022-2022-BY
+2022-10-31,2022-11-04,2022,BY,herbstferien bayern 2022,herbstferien bayern 2022-2022-BY
+2022-11-16,2022-11-16,2022,BY,herbstferien bayern 2022 (beweglicher ferientag),herbstferien bayern 2022 (beweglicher ferientag)-2022-BY
+2022-12-24,2023-01-07,2022,BY,weihnachtsferien bayern 2022,weihnachtsferien bayern 2022-2022-BY
+2022-01-29,2022-02-05,2022,BE,winterferien berlin 2022,winterferien berlin 2022-2022-BE
+2022-04-11,2022-04-23,2022,BE,osterferien berlin 2022,osterferien berlin 2022-2022-BE
+2022-05-27,2022-05-27,2022,BE,pfingstferien berlin 2022 (beweglicher ferientag),pfingstferien berlin 2022 (beweglicher ferientag)-2022-BE
+2022-07-07,2022-08-19,2022,BE,sommerferien berlin 2022,sommerferien berlin 2022-2022-BE
+2022-10-24,2022-11-05,2022,BE,herbstferien berlin 2022,herbstferien berlin 2022-2022-BE
+2022-12-22,2023-01-02,2022,BE,weihnachtsferien berlin 2022,weihnachtsferien berlin 2022-2022-BE
+2022-01-31,2022-02-05,2022,BB,winterferien brandenburg 2022,winterferien brandenburg 2022-2022-BB
+2022-04-11,2022-04-23,2022,BB,osterferien brandenburg 2022,osterferien brandenburg 2022-2022-BB
+2022-07-07,2022-08-20,2022,BB,sommerferien brandenburg 2022,sommerferien brandenburg 2022-2022-BB
+2022-10-24,2022-11-05,2022,BB,herbstferien brandenburg 2022,herbstferien brandenburg 2022-2022-BB
+2022-12-22,2023-01-03,2022,BB,weihnachtsferien brandenburg 2022,weihnachtsferien brandenburg 2022-2022-BB
+2022-01-31,2022-02-01,2022,HB,winterferien bremen 2022,winterferien bremen 2022-2022-HB
+2022-04-04,2022-04-19,2022,HB,osterferien bremen 2022,osterferien bremen 2022-2022-HB
+2022-05-27,2022-05-27,2022,HB,pfingstferien bremen 2022 (beweglicher ferientag),pfingstferien bremen 2022 (beweglicher ferientag)-2022-HB
+2022-07-14,2022-08-24,2022,HB,sommerferien bremen 2022,sommerferien bremen 2022-2022-HB
+2022-10-17,2022-10-29,2022,HB,herbstferien bremen 2022,herbstferien bremen 2022-2022-HB
+2022-12-23,2023-01-06,2022,HB,weihnachtsferien bremen 2022,weihnachtsferien bremen 2022-2022-HB
+2022-01-28,2022-01-28,2022,HH,winterferien hamburg 2022 (beweglicher ferientag),winterferien hamburg 2022 (beweglicher ferientag)-2022-HH
+2022-03-07,2022-03-18,2022,HH,osterferien hamburg 2022,osterferien hamburg 2022-2022-HH
+2022-05-23,2022-05-27,2022,HH,pfingstferien hamburg 2022,pfingstferien hamburg 2022-2022-HH
+2022-07-07,2022-08-17,2022,HH,sommerferien hamburg 2022,sommerferien hamburg 2022-2022-HH
+2022-10-10,2022-10-21,2022,HH,herbstferien hamburg 2022,herbstferien hamburg 2022-2022-HH
+2022-12-23,2023-01-06,2022,HH,weihnachtsferien hamburg 2022,weihnachtsferien hamburg 2022-2022-HH
+2022-04-11,2022-04-23,2022,HE,osterferien hessen 2022,osterferien hessen 2022-2022-HE
+2022-07-25,2022-09-02,2022,HE,sommerferien hessen 2022,sommerferien hessen 2022-2022-HE
+2022-10-24,2022-10-29,2022,HE,herbstferien hessen 2022,herbstferien hessen 2022-2022-HE
+2022-12-22,2023-01-07,2022,HE,weihnachtsferien hessen 2022,weihnachtsferien hessen 2022-2022-HE
+2022-02-05,2022-02-17,2022,MV,winterferien mecklenburg-vorpommern 2022,winterferien mecklenburg-vorpommern 2022-2022-MV
+2022-04-11,2022-04-20,2022,MV,osterferien mecklenburg-vorpommern 2022,osterferien mecklenburg-vorpommern 2022-2022-MV
+2022-05-27,2022-05-27,2022,MV,pfingstferien mecklenburg-vorpommern 2022 (beweglicher ferientag),pfingstferien mecklenburg-vorpommern 2022 (beweglicher ferientag)-2022-MV
+2022-06-03,2022-06-07,2022,MV,pfingstferien mecklenburg-vorpommern 2022,pfingstferien mecklenburg-vorpommern 2022-2022-MV
+2022-07-04,2022-08-13,2022,MV,sommerferien mecklenburg-vorpommern 2022,sommerferien mecklenburg-vorpommern 2022-2022-MV
+2022-10-10,2022-10-14,2022,MV,herbstferien mecklenburg-vorpommern 2022,herbstferien mecklenburg-vorpommern 2022-2022-MV
+2022-11-01,2022-11-01,2022,MV,herbstferien mecklenburg-vorpommern 2022 (beweglicher ferientag),herbstferien mecklenburg-vorpommern 2022 (beweglicher ferientag)-2022-MV
+2022-12-22,2023-01-02,2022,MV,weihnachtsferien mecklenburg-vorpommern 2022,weihnachtsferien mecklenburg-vorpommern 2022-2022-MV
+2022-01-31,2022-02-01,2022,NI,winterferien niedersachsen 2022,winterferien niedersachsen 2022-2022-NI
+2022-04-04,2022-04-19,2022,NI,osterferien niedersachsen 2022,osterferien niedersachsen 2022-2022-NI
+2022-05-27,2022-05-27,2022,NI,pfingstferien niedersachsen 2022 (beweglicher ferientag),pfingstferien niedersachsen 2022 (beweglicher ferientag)-2022-NI
+2022-07-14,2022-08-24,2022,NI,sommerferien niedersachsen 2022,sommerferien niedersachsen 2022-2022-NI
+2022-10-17,2022-10-28,2022,NI,herbstferien niedersachsen 2022,herbstferien niedersachsen 2022-2022-NI
+2022-12-23,2023-01-06,2022,NI,weihnachtsferien niedersachsen 2022,weihnachtsferien niedersachsen 2022-2022-NI
+2022-04-11,2022-04-23,2022,NW,osterferien nordrhein-westfalen 2022,osterferien nordrhein-westfalen 2022-2022-NW
+2022-06-27,2022-08-09,2022,NW,sommerferien nordrhein-westfalen 2022,sommerferien nordrhein-westfalen 2022-2022-NW
+2022-10-04,2022-10-15,2022,NW,herbstferien nordrhein-westfalen 2022,herbstferien nordrhein-westfalen 2022-2022-NW
+2022-12-23,2023-01-06,2022,NW,weihnachtsferien nordrhein-westfalen 2022,weihnachtsferien nordrhein-westfalen 2022-2022-NW
+2022-02-21,2022-02-25,2022,RP,winterferien rheinland-pfalz 2022,winterferien rheinland-pfalz 2022-2022-RP
+2022-04-13,2022-04-22,2022,RP,osterferien rheinland-pfalz 2022,osterferien rheinland-pfalz 2022-2022-RP
+2022-07-25,2022-09-02,2022,RP,sommerferien rheinland-pfalz 2022,sommerferien rheinland-pfalz 2022-2022-RP
+2022-10-17,2022-10-31,2022,RP,herbstferien rheinland-pfalz 2022,herbstferien rheinland-pfalz 2022-2022-RP
+2022-12-23,2023-01-02,2022,RP,weihnachtsferien rheinland-pfalz 2022,weihnachtsferien rheinland-pfalz 2022-2022-RP
+2022-02-21,2022-03-01,2022,SL,winterferien saarland 2022,winterferien saarland 2022-2022-SL
+2022-04-14,2022-04-22,2022,SL,osterferien saarland 2022,osterferien saarland 2022-2022-SL
+2022-06-07,2022-06-10,2022,SL,pfingstferien saarland 2022,pfingstferien saarland 2022-2022-SL
+2022-07-25,2022-09-02,2022,SL,sommerferien saarland 2022,sommerferien saarland 2022-2022-SL
+2022-10-24,2022-11-04,2022,SL,herbstferien saarland 2022,herbstferien saarland 2022-2022-SL
+2022-12-22,2023-01-04,2022,SL,weihnachtsferien saarland 2022,weihnachtsferien saarland 2022-2022-SL
+2022-02-12,2022-02-26,2022,SN,winterferien sachsen 2022,winterferien sachsen 2022-2022-SN
+2022-04-15,2022-04-23,2022,SN,osterferien sachsen 2022,osterferien sachsen 2022-2022-SN
+2022-05-27,2022-05-27,2022,SN,pfingstferien sachsen 2022 (beweglicher ferientag),pfingstferien sachsen 2022 (beweglicher ferientag)-2022-SN
+2022-07-18,2022-08-26,2022,SN,sommerferien sachsen 2022,sommerferien sachsen 2022-2022-SN
+2022-10-17,2022-10-29,2022,SN,herbstferien sachsen 2022,herbstferien sachsen 2022-2022-SN
+2022-12-22,2023-01-02,2022,SN,weihnachtsferien sachsen 2022,weihnachtsferien sachsen 2022-2022-SN
+2022-02-12,2022-02-19,2022,ST,winterferien sachsen-anhalt 2022,winterferien sachsen-anhalt 2022-2022-ST
+2022-04-11,2022-04-16,2022,ST,osterferien sachsen-anhalt 2022,osterferien sachsen-anhalt 2022-2022-ST
+2022-05-23,2022-05-28,2022,ST,pfingstferien sachsen-anhalt 2022,pfingstferien sachsen-anhalt 2022-2022-ST
+2022-07-14,2022-08-24,2022,ST,sommerferien sachsen-anhalt 2022,sommerferien sachsen-anhalt 2022-2022-ST
+2022-10-24,2022-11-04,2022,ST,herbstferien sachsen-anhalt 2022,herbstferien sachsen-anhalt 2022-2022-ST
+2022-12-21,2023-01-05,2022,ST,weihnachtsferien sachsen-anhalt 2022,weihnachtsferien sachsen-anhalt 2022-2022-ST
+2022-04-04,2022-04-16,2022,SH,osterferien schleswig-holstein 2022,osterferien schleswig-holstein 2022-2022-SH
+2022-05-27,2022-05-28,2022,SH,pfingstferien schleswig-holstein 2022,pfingstferien schleswig-holstein 2022-2022-SH
+2022-07-04,2022-08-13,2022,SH,sommerferien schleswig-holstein 2022,sommerferien schleswig-holstein 2022-2022-SH
+2022-10-10,2022-10-21,2022,SH,herbstferien schleswig-holstein 2022,herbstferien schleswig-holstein 2022-2022-SH
+2022-12-23,2023-01-07,2022,SH,weihnachtsferien schleswig-holstein 2022,weihnachtsferien schleswig-holstein 2022-2022-SH
+2022-02-12,2022-02-19,2022,TH,winterferien thüringen 2022,winterferien thüringen 2022-2022-TH
+2022-04-11,2022-04-23,2022,TH,osterferien thüringen 2022,osterferien thüringen 2022-2022-TH
+2022-05-27,2022-05-27,2022,TH,pfingstferien thüringen 2022 (beweglicher ferientag),pfingstferien thüringen 2022 (beweglicher ferientag)-2022-TH
+2022-07-18,2022-08-27,2022,TH,sommerferien thüringen 2022,sommerferien thüringen 2022-2022-TH
+2022-10-17,2022-10-29,2022,TH,herbstferien thüringen 2022,herbstferien thüringen 2022-2022-TH
+2022-12-22,2023-01-03,2022,TH,weihnachtsferien thüringen 2022,weihnachtsferien thüringen 2022-2022-TH
+2023-04-06,2023-04-06,2023,BW,osterferien baden-württemberg 2023 (beweglicher ferientag),osterferien baden-württemberg 2023 (beweglicher ferientag)-2023-BW
+2023-04-11,2023-04-15,2023,BW,osterferien baden-württemberg 2023,osterferien baden-württemberg 2023-2023-BW
+2023-05-30,2023-06-09,2023,BW,pfingstferien baden-württemberg 2023,pfingstferien baden-württemberg 2023-2023-BW
+2023-07-27,2023-09-09,2023,BW,sommerferien baden-württemberg 2023,sommerferien baden-württemberg 2023-2023-BW
+2023-10-30,2023-11-03,2023,BW,herbstferien baden-württemberg 2023,herbstferien baden-württemberg 2023-2023-BW
+2023-12-23,2024-01-05,2023,BW,weihnachtsferien baden-württemberg 2023,weihnachtsferien baden-württemberg 2023-2023-BW
+2023-02-20,2023-02-24,2023,BY,winterferien bayern 2023,winterferien bayern 2023-2023-BY
+2023-04-03,2023-04-15,2023,BY,osterferien bayern 2023,osterferien bayern 2023-2023-BY
+2023-05-30,2023-06-09,2023,BY,pfingstferien bayern 2023,pfingstferien bayern 2023-2023-BY
+2023-07-31,2023-09-11,2023,BY,sommerferien bayern 2023,sommerferien bayern 2023-2023-BY
+2023-10-30,2023-11-03,2023,BY,herbstferien bayern 2023,herbstferien bayern 2023-2023-BY
+2023-11-22,2023-11-22,2023,BY,herbstferien bayern 2023 (beweglicher ferientag),herbstferien bayern 2023 (beweglicher ferientag)-2023-BY
+2023-12-23,2024-01-05,2023,BY,weihnachtsferien bayern 2023,weihnachtsferien bayern 2023-2023-BY
+2023-01-30,2023-02-04,2023,BE,winterferien berlin 2023,winterferien berlin 2023-2023-BE
+2023-04-03,2023-04-14,2023,BE,osterferien berlin 2023,osterferien berlin 2023-2023-BE
+2023-05-19,2023-05-19,2023,BE,pfingstferien berlin 2023 (beweglicher ferientag),pfingstferien berlin 2023 (beweglicher ferientag)-2023-BE
+2023-07-13,2023-08-25,2023,BE,sommerferien berlin 2023,sommerferien berlin 2023-2023-BE
+2023-10-02,2023-10-02,2023,BE,herbstferien berlin 2023 (beweglicher ferientag),herbstferien berlin 2023 (beweglicher ferientag)-2023-BE
+2023-10-23,2023-11-04,2023,BE,herbstferien berlin 2023,herbstferien berlin 2023-2023-BE
+2023-12-23,2024-01-05,2023,BE,weihnachtsferien berlin 2023,weihnachtsferien berlin 2023-2023-BE
+2023-01-30,2023-02-03,2023,BB,winterferien brandenburg 2023,winterferien brandenburg 2023-2023-BB
+2023-04-03,2023-04-14,2023,BB,osterferien brandenburg 2023,osterferien brandenburg 2023-2023-BB
+2023-07-13,2023-08-26,2023,BB,sommerferien brandenburg 2023,sommerferien brandenburg 2023-2023-BB
+2023-10-23,2023-11-04,2023,BB,herbstferien brandenburg 2023,herbstferien brandenburg 2023-2023-BB
+2023-12-23,2024-01-05,2023,BB,weihnachtsferien brandenburg 2023,weihnachtsferien brandenburg 2023-2023-BB
+2023-01-30,2023-01-31,2023,HB,winterferien bremen 2023,winterferien bremen 2023-2023-HB
+2023-03-27,2023-04-11,2023,HB,osterferien bremen 2023,osterferien bremen 2023-2023-HB
+2023-05-19,2023-05-19,2023,HB,pfingstferien bremen 2023 (beweglicher ferientag),pfingstferien bremen 2023 (beweglicher ferientag)-2023-HB
+2023-07-06,2023-08-16,2023,HB,sommerferien bremen 2023,sommerferien bremen 2023-2023-HB
+2023-10-02,2023-10-02,2023,HB,herbstferien bremen 2023 (beweglicher ferientag),herbstferien bremen 2023 (beweglicher ferientag)-2023-HB
+2023-10-16,2023-10-30,2023,HB,herbstferien bremen 2023,herbstferien bremen 2023-2023-HB
+2023-12-23,2024-01-05,2023,HB,weihnachtsferien bremen 2023,weihnachtsferien bremen 2023-2023-HB
+2023-01-27,2023-01-27,2023,HH,winterferien hamburg 2023 (beweglicher ferientag),winterferien hamburg 2023 (beweglicher ferientag)-2023-HH
+2023-03-06,2023-03-17,2023,HH,osterferien hamburg 2023,osterferien hamburg 2023-2023-HH
+2023-05-15,2023-05-19,2023,HH,pfingstferien hamburg 2023,pfingstferien hamburg 2023-2023-HH
+2023-07-13,2023-08-23,2023,HH,sommerferien hamburg 2023,sommerferien hamburg 2023-2023-HH
+2023-10-02,2023-10-02,2023,HH,herbstferien hamburg 2023 (beweglicher ferientag),herbstferien hamburg 2023 (beweglicher ferientag)-2023-HH
+2023-10-16,2023-10-27,2023,HH,herbstferien hamburg 2023,herbstferien hamburg 2023-2023-HH
+2023-12-22,2024-01-05,2023,HH,weihnachtsferien hamburg 2023,weihnachtsferien hamburg 2023-2023-HH
+2023-04-03,2023-04-22,2023,HE,osterferien hessen 2023,osterferien hessen 2023-2023-HE
+2023-07-24,2023-09-01,2023,HE,sommerferien hessen 2023,sommerferien hessen 2023-2023-HE
+2023-10-23,2023-10-28,2023,HE,herbstferien hessen 2023,herbstferien hessen 2023-2023-HE
+2023-12-27,2024-01-13,2023,HE,weihnachtsferien hessen 2023,weihnachtsferien hessen 2023-2023-HE
+2023-02-06,2023-02-18,2023,MV,winterferien mecklenburg-vorpommern 2023,winterferien mecklenburg-vorpommern 2023-2023-MV
+2023-04-03,2023-04-12,2023,MV,osterferien mecklenburg-vorpommern 2023,osterferien mecklenburg-vorpommern 2023-2023-MV
+2023-05-19,2023-05-19,2023,MV,pfingstferien mecklenburg-vorpommern 2023 (beweglicher ferientag),pfingstferien mecklenburg-vorpommern 2023 (beweglicher ferientag)-2023-MV
+2023-05-26,2023-05-30,2023,MV,pfingstferien mecklenburg-vorpommern 2023,pfingstferien mecklenburg-vorpommern 2023-2023-MV
+2023-07-17,2023-08-26,2023,MV,sommerferien mecklenburg-vorpommern 2023,sommerferien mecklenburg-vorpommern 2023-2023-MV
+2023-10-09,2023-10-14,2023,MV,herbstferien mecklenburg-vorpommern 2023,herbstferien mecklenburg-vorpommern 2023-2023-MV
+2023-10-30,2023-10-30,2023,MV,herbstferien mecklenburg-vorpommern 2023 (beweglicher ferientag),herbstferien mecklenburg-vorpommern 2023 (beweglicher ferientag)-2023-MV
+2023-12-21,2024-01-03,2023,MV,weihnachtsferien mecklenburg-vorpommern 2023,weihnachtsferien mecklenburg-vorpommern 2023-2023-MV
+2023-01-30,2023-01-31,2023,NI,winterferien niedersachsen 2023,winterferien niedersachsen 2023-2023-NI
+2023-03-27,2023-04-11,2023,NI,osterferien niedersachsen 2023,osterferien niedersachsen 2023-2023-NI
+2023-05-19,2023-05-19,2023,NI,pfingstferien niedersachsen 2023 (beweglicher ferientag),pfingstferien niedersachsen 2023 (beweglicher ferientag)-2023-NI
+2023-07-06,2023-08-16,2023,NI,sommerferien niedersachsen 2023,sommerferien niedersachsen 2023-2023-NI
+2023-10-02,2023-10-02,2023,NI,herbstferien niedersachsen 2023 (beweglicher ferientag),herbstferien niedersachsen 2023 (beweglicher ferientag)-2023-NI
+2023-10-16,2023-10-30,2023,NI,herbstferien niedersachsen 2023,herbstferien niedersachsen 2023-2023-NI
+2023-12-27,2024-01-05,2023,NI,weihnachtsferien niedersachsen 2023,weihnachtsferien niedersachsen 2023-2023-NI
+2023-04-03,2023-04-15,2023,NW,osterferien nordrhein-westfalen 2023,osterferien nordrhein-westfalen 2023-2023-NW
+2023-05-30,2023-05-30,2023,NW,pfingstferien nordrhein-westfalen 2023 (beweglicher ferientag),pfingstferien nordrhein-westfalen 2023 (beweglicher ferientag)-2023-NW
+2023-06-22,2023-08-04,2023,NW,sommerferien nordrhein-westfalen 2023,sommerferien nordrhein-westfalen 2023-2023-NW
+2023-10-02,2023-10-14,2023,NW,herbstferien nordrhein-westfalen 2023,herbstferien nordrhein-westfalen 2023-2023-NW
+2023-12-21,2024-01-05,2023,NW,weihnachtsferien nordrhein-westfalen 2023,weihnachtsferien nordrhein-westfalen 2023-2023-NW
+2023-04-03,2023-04-06,2023,RP,osterferien rheinland-pfalz 2023,osterferien rheinland-pfalz 2023-2023-RP
+2023-05-30,2023-06-07,2023,RP,pfingstferien rheinland-pfalz 2023,pfingstferien rheinland-pfalz 2023-2023-RP
+2023-07-24,2023-09-01,2023,RP,sommerferien rheinland-pfalz 2023,sommerferien rheinland-pfalz 2023-2023-RP
+2023-10-16,2023-10-27,2023,RP,herbstferien rheinland-pfalz 2023,herbstferien rheinland-pfalz 2023-2023-RP
+2023-12-27,2024-01-05,2023,RP,weihnachtsferien rheinland-pfalz 2023,weihnachtsferien rheinland-pfalz 2023-2023-RP
+2023-02-20,2023-02-24,2023,SL,winterferien saarland 2023,winterferien saarland 2023-2023-SL
+2023-04-03,2023-04-12,2023,SL,osterferien saarland 2023,osterferien saarland 2023-2023-SL
+2023-05-30,2023-06-02,2023,SL,pfingstferien saarland 2023,pfingstferien saarland 2023-2023-SL
+2023-07-24,2023-09-01,2023,SL,sommerferien saarland 2023,sommerferien saarland 2023-2023-SL
+2023-10-23,2023-11-03,2023,SL,herbstferien saarland 2023,herbstferien saarland 2023-2023-SL
+2023-12-21,2024-01-02,2023,SL,weihnachtsferien saarland 2023,weihnachtsferien saarland 2023-2023-SL
+2023-02-13,2023-02-24,2023,SN,winterferien sachsen 2023,winterferien sachsen 2023-2023-SN
+2023-04-07,2023-04-15,2023,SN,osterferien sachsen 2023,osterferien sachsen 2023-2023-SN
+2023-05-19,2023-05-19,2023,SN,pfingstferien sachsen 2023 (beweglicher ferientag),pfingstferien sachsen 2023 (beweglicher ferientag)-2023-SN
+2023-07-10,2023-08-18,2023,SN,sommerferien sachsen 2023,sommerferien sachsen 2023-2023-SN
+2023-10-02,2023-10-14,2023,SN,herbstferien sachsen 2023,herbstferien sachsen 2023-2023-SN
+2023-10-30,2023-10-30,2023,SN,herbstferien sachsen 2023 (beweglicher ferientag),herbstferien sachsen 2023 (beweglicher ferientag)-2023-SN
+2023-12-23,2024-01-02,2023,SN,weihnachtsferien sachsen 2023,weihnachtsferien sachsen 2023-2023-SN
+2023-02-06,2023-02-11,2023,ST,winterferien sachsen-anhalt 2023,winterferien sachsen-anhalt 2023-2023-ST
+2023-04-03,2023-04-08,2023,ST,osterferien sachsen-anhalt 2023,osterferien sachsen-anhalt 2023-2023-ST
+2023-05-15,2023-05-19,2023,ST,pfingstferien sachsen-anhalt 2023,pfingstferien sachsen-anhalt 2023-2023-ST
+2023-07-06,2023-08-16,2023,ST,sommerferien sachsen-anhalt 2023,sommerferien sachsen-anhalt 2023-2023-ST
+2023-10-02,2023-10-02,2023,ST,herbstferien sachsen-anhalt 2023 (beweglicher ferientag),herbstferien sachsen-anhalt 2023 (beweglicher ferientag)-2023-ST
+2023-10-16,2023-10-30,2023,ST,herbstferien sachsen-anhalt 2023,herbstferien sachsen-anhalt 2023-2023-ST
+2023-12-21,2024-01-03,2023,ST,weihnachtsferien sachsen-anhalt 2023,weihnachtsferien sachsen-anhalt 2023-2023-ST
+2023-04-06,2023-04-22,2023,SH,osterferien schleswig-holstein 2023,osterferien schleswig-holstein 2023-2023-SH
+2023-05-19,2023-05-20,2023,SH,pfingstferien schleswig-holstein 2023,pfingstferien schleswig-holstein 2023-2023-SH
+2023-07-17,2023-08-26,2023,SH,sommerferien schleswig-holstein 2023,sommerferien schleswig-holstein 2023-2023-SH
+2023-10-16,2023-10-27,2023,SH,herbstferien schleswig-holstein 2023,herbstferien schleswig-holstein 2023-2023-SH
+2023-12-27,2024-01-06,2023,SH,weihnachtsferien schleswig-holstein 2023,weihnachtsferien schleswig-holstein 2023-2023-SH
+2023-02-13,2023-02-17,2023,TH,winterferien thüringen 2023,winterferien thüringen 2023-2023-TH
+2023-04-03,2023-04-15,2023,TH,osterferien thüringen 2023,osterferien thüringen 2023-2023-TH
+2023-05-19,2023-05-19,2023,TH,pfingstferien thüringen 2023 (beweglicher ferientag),pfingstferien thüringen 2023 (beweglicher ferientag)-2023-TH
+2023-07-10,2023-08-19,2023,TH,sommerferien thüringen 2023,sommerferien thüringen 2023-2023-TH
+2023-10-02,2023-10-14,2023,TH,herbstferien thüringen 2023,herbstferien thüringen 2023-2023-TH
+2023-12-22,2024-01-05,2023,TH,weihnachtsferien thüringen 2023,weihnachtsferien thüringen 2023-2023-TH
