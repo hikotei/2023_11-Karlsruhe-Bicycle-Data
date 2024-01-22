@@ -7,6 +7,8 @@ import yfinance as yf
 import holidays
 from datetime import datetime, timedelta
 
+school_holiday_bw_url = 'https://raw.githubusercontent.com/hikotei/2023_11-Karlsruhe-Bicycle-Data/main/data/schulferien_BW_2012_2024.csv'
+
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =	
 
 def create_features_df(df, holiday_method='simple', lags=None, school_holidays_bw=False):
@@ -127,7 +129,7 @@ def create_features_df(df, holiday_method='simple', lags=None, school_holidays_b
     if school_holidays_bw:
 
         # get school holidays from github
-        df_school_hol_bw = pd.read_csv('https://raw.githubusercontent.com/hikotei/2023_11-Karlsruhe-Bicycle-Data/main/schulferien_BW_2012_2024.csv')
+        df_school_hol_bw = pd.read_csv(school_holiday_bw_url)
         df_school_hol_bw['start'] = pd.to_datetime(df_school_hol_bw['start'])
         df_school_hol_bw['end'] = pd.to_datetime(df_school_hol_bw['end'])
         df_school_hol_bw['stateCode'] = df_school_hol_bw['stateCode'].astype('string')
@@ -343,7 +345,7 @@ def create_dummy_df(df, month_method='simple', weekday_method='simple', hour_met
     if school_holidays_bw:
 
         # get school holidays from github
-        df_school_hol_bw = pd.read_csv('https://raw.githubusercontent.com/hikotei/2023_11-Karlsruhe-Bicycle-Data/main/schulferien_BW_2012_2024.csv')
+        df_school_hol_bw = pd.read_csv(school_holiday_bw_url)
         df_school_hol_bw['start'] = pd.to_datetime(df_school_hol_bw['start'])
         df_school_hol_bw['end'] = pd.to_datetime(df_school_hol_bw['end'])
         df_school_hol_bw['stateCode'] = df_school_hol_bw['stateCode'].astype('string')
