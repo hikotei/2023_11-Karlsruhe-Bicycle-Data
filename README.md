@@ -74,6 +74,7 @@ Detailed descriptions of the weather variables used in this analysis, including 
 
 - Habe Schulferien per [API](https://ferien-api.de/) für alle Bundesländer von 2017 bis 2023 gepullt, da es nur ab 2017 Daten darauf gibt
 - Da wir eigentlich nur Ferien für BW brauchen, habe ich den Rest noch manuell bis 2013 eintragen per KMK Archiv der historischen pdf Daten [Link](https://www.kmk.org/service/ferien/archiv-der-ferientermine.html)
+- BW Schulferien habe ich abgespeicher in "./data" folder [Link](https://raw.githubusercontent.com/hikotei/2023_11-Karlsruhe-Bicycle-Data/main/data/schulferien_BW_2012_2024.csv)
 
 applied 3 models
 1) **naive benchmark**: using mean of past quantiles with same weekday and month
