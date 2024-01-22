@@ -71,23 +71,12 @@ Detailed descriptions of the weather variables used in this analysis, including 
 **[ 🚧 UNDER CONSTRUCTION ]**
 
 ### Update 2024.01.22
-applied 3 models: naive benchmark, quantile regression, gradient boosting
-
-    naive benchmark:
-    - mean of past quantiles with same weekday and month
-
-    quantile regression:
-    - based on dummies for weekday and month
-    - weather variables
-    - holiday and school holiday dummies
-
-    gradient boosting:
-    - based on features: weekday, month
-    - weather variables
-    - holiday and school holiday dummies
+applied 3 models
+1) **naive benchmark**: using mean of past quantiles with same weekday and month
+2) **quantile regression**: based on weather variables, holiday and school holiday dummies + dummies for weekday and month
+3) **gradient boosting**: based on weather variables, holiday and school holiday dummies + features: weekday and month
 
 did gridsearch for best params of gradient boosting models for each quantile separately
-
 ```
 quantile_params = {
     0.025: {'learning_rate': 0.5, 'max_depth': 10, 'min_samples_leaf': 3, 'n_estimators': 400, 'subsample': 0.5},
@@ -98,8 +87,10 @@ quantile_params = {
 ```
 
 **Evalutation**
-- train and test on rolling fcast window and calculated quantile scores of 3 models and their ensembles
+- train and test on rolling fcast window (5-fold / rolls) and calculated quantile scores of 3 models and their ensembles
 - gradient boosting / ensemble (grad boost + quant reg) seems to perform best based on quantile score
+
+<img src="./plots/rolling_window_fold_1.png" align="center" width="300"  />      
 
 | Model               | Fold   | Mean_Quantile_Score | q_score_0.025 | q_score_0.25 | q_score_0.5 | q_score_0.75 | q_score_0.975 |
 |---------------------|--------|---------------------|---------------|--------------|-------------|--------------|---------------|
