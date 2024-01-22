@@ -71,7 +71,7 @@ Detailed descriptions of the weather variables used in this analysis, including 
 **[ 🚧 UNDER CONSTRUCTION ]**
 
 ### Update 2024.01.22
-- applied 3 models: naive benchmark, quantile regression, gradient boosting
+applied 3 models: naive benchmark, quantile regression, gradient boosting
 
     naive benchmark:
     - mean of past quantiles with same weekday and month
@@ -125,17 +125,17 @@ Detailed descriptions of the weather variables used in this analysis, including 
 
 based on quantile regression, weather variables with highest explainability are ... even though in the correlation plot they are not the weather variables with highest correlation ?
 
-  precip_indic                          -250  
-  temperature                             80  
-  precipitation                          -55  
-  precip_type                            -30  
-  windspeed                              -30  
-  windspeed_max                          -10  
-  humidity                               -10  
+    precip_indic                          -250  
+    temperature                             80  
+    precipitation                          -55  
+    precip_type                            -30  
+    windspeed                              -30  
+    windspeed_max                          -10  
+    humidity                               -10  
 
-  wind_direction                           0  
-  visibility                               0  
-  sun                                      0  
+    wind_direction                           0  
+    visibility                               0  
+    sun                                      0  
  
 ### ToDos 2023.12.01
 - Schulferien in Baden Württemberg
