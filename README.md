@@ -5,6 +5,10 @@ This repository focuses on analyzing bicycle data in Karlsruhe, Germany, and inc
 
 <img src="./plots/bikedata_corr_plot.png" align="center" width="300"  />      
 
+<details>
+  
+<summary>DWD Weather Variable Aggregation<summary>
+
 ### DWD Weather Variable Aggregation
 The table below summarizes the aggregation methods applied to specific DWD variables in the output dataset:
 
@@ -21,6 +25,8 @@ The table below summarizes the aggregation methods applied to specific DWD varia
 | RS_IND.Niederschlagsindikator    | precip_indic                  | Median                    |
 | WRTR.Niederschlagsform           | precip_type                   | Median                    |
 
+<details>
+  
 ### DWD Weather Data Descriptions
 Detailed descriptions of the weather variables used in this analysis, including links to their respective description pdfs from official DWD [mirror](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/).
 
