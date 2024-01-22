@@ -68,7 +68,7 @@ Detailed descriptions of the weather variables used in this analysis, including 
 
 ---
 
-/callout **[ 🚧 UNDER CONSTRUCTION ]**
+**[ 🚧 UNDER CONSTRUCTION ]**
 
 ### Update 2024.01.22
 - applied 3 models: naive benchmark, quantile regression, gradient boosting
