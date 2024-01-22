@@ -24,21 +24,21 @@ The table below summarizes the aggregation methods applied to specific DWD varia
 ### DWD Weather Data Descriptions
 Detailed descriptions of the weather variables used in this analysis, including links to their respective description pdfs from official DWD [mirror](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/).
 
-#### Stündliche Stationsmessungen der Lufttemperatur und Luftfeuchte für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/air_temperature/BESCHREIBUNG_obsgermany_climate_hourly_air_temperature_de.pdf)
+Stündliche Stationsmessungen der Lufttemperatur und Luftfeuchte für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/air_temperature/BESCHREIBUNG_obsgermany_climate_hourly_air_temperature_de.pdf)
 
 - `TT_TU.Lufttemperatur`: Lufttemperatur in °C 
 - `RF_TU.Relative_Feuchte`: relative Feuchte in %
 
-#### Stundenmaximum aus Stationsmessungen der Windgeschwindigkeit für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/extreme_wind/BESCHREIBUNG_obsgermany_climate_hourly_extreme_wind_de.pdf)
+Stundenmaximum aus Stationsmessungen der Windgeschwindigkeit für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/extreme_wind/BESCHREIBUNG_obsgermany_climate_hourly_extreme_wind_de.pdf)
 
 - `FX_911.Windspitze_Stunde1`: Windgeschwindigkeit, Windspitze in m/s, Fehlwerte=-999
 
-#### Stundenmittel aus Stationsmessungen der Windgeschwindigkeit und Windrichtung für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/wind/BESCHREIBUNG_obsgermany_climate_hourly_wind_de.pdf)
+Stundenmittel aus Stationsmessungen der Windgeschwindigkeit und Windrichtung für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/wind/BESCHREIBUNG_obsgermany_climate_hourly_wind_de.pdf)
 
 - `F.Windgeschwindigkeit`: Windgeschwindigkeit in m/s, Fehlwerte=-999
 - `D.Windrichtung`: Windrichtung in °, Fehlwerte=-999
 
-#### Stündliche Stationsmessungen des Niederschlags für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/precipitation/BESCHREIBUNG_obsgermany_climate_hourly_precipitation_de.pdf)
+Stündliche Stationsmessungen des Niederschlags für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/precipitation/BESCHREIBUNG_obsgermany_climate_hourly_precipitation_de.pdf)
 
 - `R1.Niederschlagshoehe`: Niederschlagshoehe in mm (Stundensumme)
 - `RS_IND.Niederschlagsindikator`: Indikator Niederschlag, 0=nein, 1=ja, -999=Fehlwert
@@ -52,11 +52,11 @@ Detailed descriptions of the weather variables used in this analysis, including 
   - 9 = Fehlkennung; fehlender Wert oder Niederschlagsform nicht feststellbar bei automatischer Messung
   - -999 = Fehlwert
 
-#### Stündliche Stationsmessungen der Sonnenscheindauer für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/sun/BESCHREIBUNG_obsgermany_climate_hourly_sun_de.pdf)
+Stündliche Stationsmessungen der Sonnenscheindauer für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/sun/BESCHREIBUNG_obsgermany_climate_hourly_sun_de.pdf)
 
 - `SD_SO.Sonnenscheindauer`: stdl. Sonnenscheindauer in min, Fehlwert = -999 (Stundensumme)
 
-#### Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/visibility/BESCHREIBUNG_obsgermany_climate_hourly_visibility_de.pdf)
+Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/visibility/BESCHREIBUNG_obsgermany_climate_hourly_visibility_de.pdf)
 
 - `V_VV.Sichtweite`: Sichtweite in Metern, Fehlwerte=-999
 - `V_VV_I`: Sichtweiten Index, Angabe wie die Messung erfolgte
