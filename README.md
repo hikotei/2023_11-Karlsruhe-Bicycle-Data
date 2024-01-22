@@ -72,6 +72,21 @@ Detailed descriptions of the weather variables used in this analysis, including 
 
 ### Update 2024.01.22
 - applied 3 models: naive benchmark, quantile regression, gradient boosting
+
+  naive benchmark:
+  - mean of past quantiles with same weekday and month
+
+  quantile regression:
+  - based on dummies for weekday and month
+  - weather variables
+  - holiday and school holiday dummies
+  
+  gradient boosting:
+  - based on features: weekday, month
+  - weather variables
+  - holiday and school holiday dummies
+
+**-> Evalutation**
 - train and test on rolling fcast window and calculated quantile scores of 3 models and their ensembles
 - gradient boosting / ensemble (grad boost + quant reg) seems to perform best based on quantile score
 
