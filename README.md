@@ -71,6 +71,10 @@ Detailed descriptions of the weather variables used in this analysis, including 
 **[ 🚧 UNDER CONSTRUCTION ]**
 
 ### Update 2024.01.22
+
+- Habe Schulferien per [API](https://ferien-api.de/) für alle Bundesländer von 2017 bis 2023 gepullt, da es nur ab 2017 Daten darauf gibt
+- Da wir eigentlich nur Ferien für BW brauchen, habe ich den Rest noch manuell bis 2013 eintragen per KMK Archiv der historischen pdf Daten [Link](https://www.kmk.org/service/ferien/archiv-der-ferientermine.html)
+
 applied 3 models
 1) **naive benchmark**: using mean of past quantiles with same weekday and month
 2) **quantile regression**: based on weather variables, holiday and school holiday dummies + dummies for weekday and month
@@ -125,21 +129,35 @@ quantile_params = {
 | quantile_reg         | fold_5 | 238.210009          | 36.605980     | 227.909321   | 365.917651  | 423.984187   | 136.632906    |
 | **Average**         | -      | **148.228566**      | **39.341273** | **163.785442** | **240.014153** | **238.193430** | **57.408529** |
 
-- based on quantile regression, weather variables with highest explainability are the following
-- even though in the correlation plot these are not the weather variables with highest correlation ?
+### Fragen 2024.01.23
+- Q = macht es einen Unterschied wenn ich test period = 10 oder 20 nehme ?
+- Q = schulferien scheinen keinen großen effekt zu haben ...
+    - Im Modell quant reg & grad boost machen Schulferien nicht viel aus …
+    - auch im einfachen lin reg mit / ohne regularization sind schulferien effects nicht riesig
+    - vor allem manche sind positiv (herbst & sommer) manche sind negativ (winter & ostern & pfingsten)
+        - vielleicht … weil über weihnachten kollinearität zwischen normalen holiday dummies und schulferien dummy existiert
+        - aber im sommer gibts auch überlappung mit maria himmelfahrt und weltkindertag … diese werden aber in BW nicht gefeiert !!!
+- Q = Forecasting with weather variables in the model becomes problematic …
+    - and using lagged weather variables for bicycle traffic is probably not so accurate since its the temperature today that matters whether somebody rides a bike …
+    - at most whether it snowed yesterday might be important …
+    - TODO = try lagged weather variables
+- Q = kann ich die negativen predictions von quant reg einfach auf 0 setzen ? oder muss man alle anderen quantile auch hochshiften
+- Q = based on quantile regression, weather variables with highest explainability are different than weather variables with highest correlation ?
 
-    precip_indic                          -250  
-    temperature                             80  
-    precipitation                          -55  
-    precip_type                            -30  
-    windspeed                              -30  
-    windspeed_max                          -10  
-    humidity                               -10  
+```
+precip_indic                          -250  
+temperature                             80  
+precipitation                          -55  
+precip_type                            -30  
+windspeed                              -30  
+windspeed_max                          -10  
+humidity                               -10  
 
-    wind_direction                           0  
-    visibility                               0  
-    sun                                      0  
- 
+wind_direction                           0  
+visibility                               0  
+sun                                      0  
+```
+
 ### ToDos 2023.12.01
 - Schulferien in Baden Württemberg
 - Benchmark Modelle probieren / überlegen / unterschiedliche Komplexitäten etc
