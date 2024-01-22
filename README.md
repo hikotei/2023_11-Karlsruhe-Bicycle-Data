@@ -86,11 +86,11 @@ quantile_params = {
     0.975: {'learning_rate': 0.5, 'max_depth': 10, 'min_samples_leaf': 3, 'n_estimators': 400, 'subsample': 0.7}}
 ```
 
-**Evalutation**
+**Evaluation**
 - train and test on rolling fcast window (5-fold / rolls) and calculated quantile scores of 3 models and their ensembles
 - gradient boosting / ensemble (grad boost + quant reg) seems to perform best based on quantile score
 
-<img src="./plots/rolling_window_fold_1.png" align="center" width="300"  />      
+<img src="./plots/rolling_window_fold_1.png" align="center" width="1000"  />      
 
 | Model               | Fold   | Mean_Quantile_Score | q_score_0.025 | q_score_0.25 | q_score_0.5 | q_score_0.75 | q_score_0.975 |
 |---------------------|--------|---------------------|---------------|--------------|-------------|--------------|---------------|
