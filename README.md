@@ -86,7 +86,18 @@ applied 3 models: naive benchmark, quantile regression, gradient boosting
     - weather variables
     - holiday and school holiday dummies
 
-**-> Evalutation**
+did gridsearch for best params of gradient boosting models for each quantile separately
+
+```
+quantile_params = {
+    0.025: {'learning_rate': 0.5, 'max_depth': 10, 'min_samples_leaf': 3, 'n_estimators': 400, 'subsample': 0.5},
+    0.250: {'learning_rate': 0.2, 'max_depth': 7, 'min_samples_leaf': 3, 'n_estimators': 400, 'subsample': 0.9},
+    0.500: {'learning_rate': 0.2, 'max_depth': 5, 'min_samples_leaf': 3, 'n_estimators': 400, 'subsample': 0.9},
+    0.750: {'learning_rate': 0.2, 'max_depth': 10, 'min_samples_leaf': 3, 'n_estimators': 400, 'subsample': 0.9},
+    0.975: {'learning_rate': 0.5, 'max_depth': 10, 'min_samples_leaf': 3, 'n_estimators': 400, 'subsample': 0.7}}
+```
+
+**Evalutation**
 - train and test on rolling fcast window and calculated quantile scores of 3 models and their ensembles
 - gradient boosting / ensemble (grad boost + quant reg) seems to perform best based on quantile score
 
@@ -123,7 +134,8 @@ applied 3 models: naive benchmark, quantile regression, gradient boosting
 | quantile_reg         | fold_5 | 238.210009          | 36.605980     | 227.909321   | 365.917651  | 423.984187   | 136.632906    |
 | **Average**         | -      | **148.228566**      | **39.341273** | **163.785442** | **240.014153** | **238.193430** | **57.408529** |
 
-based on quantile regression, weather variables with highest explainability are ... even though in the correlation plot they are not the weather variables with highest correlation ?
+- based on quantile regression, weather variables with highest explainability are the following
+- even though in the correlation plot these are not the weather variables with highest correlation ?
 
     precip_indic                          -250  
     temperature                             80  
