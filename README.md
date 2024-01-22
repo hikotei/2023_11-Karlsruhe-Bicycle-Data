@@ -3,7 +3,7 @@
 ### Summary
 This repository focuses on analyzing bicycle data in Karlsruhe, Germany, and includes weather data from the German Weather Service (DWD). The weather data is processed using the rDWD package in R, and the README provides detailed information about the variables, their descriptions, and aggregation methods used.
 
-<img src="./bikedata_corr_plot.png" align="center" width="750"  />
+<img src="./plots/bikedata_corr_plot.png" align="center" width="750"  />
 
 ### DWD Weather Variable Aggregation
 The table below summarizes the aggregation methods applied to specific DWD variables in the output dataset:
