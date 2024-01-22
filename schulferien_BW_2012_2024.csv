@@ -1,70 +1,70 @@
 start,end,year,stateCode,name
-2012-10-29,2012-11-02,2012,BW,herbstferien baden-württemberg 2012
-2012-12-24,2013-01-05,2012,BW,weihnachtsferien baden-württemberg 2012
-2013-03-25,2013-04-05,2013,BW,osterferien baden-württemberg 2013
-2013-05-21,2013-06-01,2013,BW,pfingstferien baden-württemberg 2013
-2013-07-25,2013-09-07,2013,BW,sommerferien baden-württemberg 2013
-2013-10-28,2013-10-30,2013,BW,herbstferien baden-württemberg 2013
-2013-12-23,2014-01-04,2013,BW,weihnachtsferien baden-württemberg 2013
-2014-03-14,2014-04-25,2014,BW,osterferien baden-württemberg 2014
-2014-06-10,2014-06-21,2014,BW,pfingstferien baden-württemberg 2014
-2014-07-31,2014-09-13,2014,BW,sommerferien baden-württemberg 2014
-2014-10-27,2014-10-30,2014,BW,herbstferien baden-württemberg 2014
-2014-12-22,2015-01-05,2014,BW,weihnachtsferien baden-württemberg 2014
-2015-03-30,2015-04-10,2015,BW,osterferien baden-württemberg 2015
-2015-05-26,2015-06-06,2015,BW,pfingstferien baden-württemberg 2015
-2015-07-30,2015-09-12,2015,BW,sommerferien baden-württemberg 2015
-2015-11-02,2015-11-06,2015,BW,herbstferien baden-württemberg 2015
-2015-12-23,2016-01-09,2015,BW,weihnachtsferien baden-württemberg 2015
-2016-03-29,2016-04-02,2016,BW,osterferien baden-württemberg 2016
-2016-05-17,2016-05-28,2016,BW,pfingstferien baden-württemberg 2016
-2016-07-28,2016-09-10,2016,BW,sommerferien baden-württemberg 2016
-2016-11-02,2016-11-04,2016,BW,herbstferien baden-württemberg 2017
-2016-12-23,2017-01-07,2016,BW,weihnachtsferien baden-württemberg 2017
-2017-04-10,2017-04-21,2017,BW,osterferien baden-württemberg 2017
-2017-06-06,2017-06-16,2017,BW,pfingstferien baden-württemberg 2017
-2017-07-27,2017-09-09,2017,BW,sommerferien baden-württemberg 2017
-2017-10-30,2017-11-03,2017,BW,herbstferien baden-württemberg 2017
-2017-12-22,2018-01-05,2017,BW,weihnachtsferien baden-württemberg 2017
-2018-03-26,2018-04-06,2018,BW,osterferien baden-württemberg 2018
-2018-05-22,2018-06-02,2018,BW,pfingstferien baden-württemberg 2018
-2018-07-26,2018-09-08,2018,BW,sommerferien baden-württemberg 2018
-2018-10-29,2018-11-02,2018,BW,herbstferien baden-württemberg 2018
-2018-12-24,2019-01-05,2018,BW,weihnachtsferien baden-württemberg 2018
-2019-04-15,2019-04-27,2019,BW,osterferien baden-württemberg 2019
-2019-06-11,2019-06-21,2019,BW,pfingstferien baden-württemberg 2019
-2019-07-29,2019-09-10,2019,BW,sommerferien baden-württemberg 2019
-2019-04-15,2019-04-27,2019,BW,osterferien baden-württemberg 2019
-2019-06-11,2019-06-21,2019,BW,pfingstferien baden-württemberg 2019
-2019-07-29,2019-09-10,2019,BW,sommerferien baden-württemberg 2019
-2019-10-28,2019-10-31,2019,BW,herbstferien baden-württemberg 2019
-2019-12-23,2020-01-04,2019,BW,weihnachtsferien baden-württemberg 2019
-2020-04-06,2020-04-18,2020,BW,osterferien baden-württemberg 2020
-2020-06-02,2020-06-13,2020,BW,pfingstferien baden-württemberg 2020
-2020-07-30,2020-09-12,2020,BW,sommerferien baden-württemberg 2020
-2020-10-26,2020-10-30,2020,BW,herbstferien baden-württemberg 2020
-2020-10-31,2020-10-31,2020,BW,herbstferien beweglicher ferientag baden-württemberg 2020
-2020-12-23,2021-01-09,2020,BW,weihnachtsferien baden-württemberg 2020
-2021-04-06,2021-04-10,2021,BW,osterferien baden-württemberg 2021
-2021-05-25,2021-06-05,2021,BW,pfingstferien baden-württemberg 2021
-2021-07-29,2021-09-11,2021,BW,sommerferien baden-württemberg 2021
-2021-11-02,2021-11-06,2021,BW,herbstferien baden-württemberg 2021
-2021-12-23,2022-01-08,2021,BW,weihnachtsferien baden-württemberg 2021
-2022-04-19,2022-04-23,2022,BW,osterferien baden-württemberg 2022
-2022-06-07,2022-06-18,2022,BW,pfingstferien baden-württemberg 2022
-2022-07-28,2022-09-10,2022,BW,sommerferien baden-württemberg 2022
-2022-10-31,2022-10-31,2022,BW,herbstferien baden-württemberg 2022 (beweglicher ferientag)
-2022-11-02,2022-11-04,2022,BW,herbstferien baden-württemberg 2022
-2022-12-21,2023-01-07,2022,BW,weihnachtsferien baden-württemberg 2022
-2023-04-06,2023-04-06,2023,BW,osterferien baden-württemberg 2023 (beweglicher ferientag)
-2023-04-11,2023-04-15,2023,BW,osterferien baden-württemberg 2023
-2023-05-30,2023-06-09,2023,BW,pfingstferien baden-württemberg 2023
-2023-07-27,2023-09-09,2023,BW,sommerferien baden-württemberg 2023
-2023-10-30,2023-11-03,2023,BW,herbstferien baden-württemberg 2023
-2023-12-23,2024-01-05,2023,BW,weihnachtsferien baden-württemberg 2023
-2024-03-23,2024-04-05,2024,BW,osterferien baden-württemberg 2024
-2024-05-21,2024-05-31,2024,BW,pfingstferien baden-württemberg 2024
-2024-07-25,2024-09-07,2024,BW,sommerferien baden-württemberg 2024
-2024-10-28,2024-10-30,2024,BW,herbstferien baden-württemberg 2024
-2024-10-31,2024-10-31,2024,BW,herbstferien baden-württemberg 2024 (beweglicher ferientag)
-2024-12-23,2025-01-04,2024,BW,weihnachtsferien baden-württemberg 2024
+2012-10-29,2012-11-02,2012,BW,herbstferien
+2012-12-24,2013-01-05,2012,BW,weihnachtsferien
+2013-03-25,2013-04-05,2013,BW,osterferien
+2013-05-21,2013-06-01,2013,BW,pfingstferien
+2013-07-25,2013-09-07,2013,BW,sommerferien
+2013-10-28,2013-10-30,2013,BW,herbstferien
+2013-12-23,2014-01-04,2013,BW,weihnachtsferien
+2014-03-14,2014-04-25,2014,BW,osterferien
+2014-06-10,2014-06-21,2014,BW,pfingstferien
+2014-07-31,2014-09-13,2014,BW,sommerferien
+2014-10-27,2014-10-30,2014,BW,herbstferien
+2014-12-22,2015-01-05,2014,BW,weihnachtsferien
+2015-03-30,2015-04-10,2015,BW,osterferien
+2015-05-26,2015-06-06,2015,BW,pfingstferien
+2015-07-30,2015-09-12,2015,BW,sommerferien
+2015-11-02,2015-11-06,2015,BW,herbstferien
+2015-12-23,2016-01-09,2015,BW,weihnachtsferien
+2016-03-29,2016-04-02,2016,BW,osterferien
+2016-05-17,2016-05-28,2016,BW,pfingstferien
+2016-07-28,2016-09-10,2016,BW,sommerferien
+2016-11-02,2016-11-04,2016,BW,herbstferien
+2016-12-23,2017-01-07,2016,BW,weihnachtsferien
+2017-04-10,2017-04-21,2017,BW,osterferien
+2017-06-06,2017-06-16,2017,BW,pfingstferien
+2017-07-27,2017-09-09,2017,BW,sommerferien
+2017-10-30,2017-11-03,2017,BW,herbstferien
+2017-12-22,2018-01-05,2017,BW,weihnachtsferien
+2018-03-26,2018-04-06,2018,BW,osterferien
+2018-05-22,2018-06-02,2018,BW,pfingstferien
+2018-07-26,2018-09-08,2018,BW,sommerferien
+2018-10-29,2018-11-02,2018,BW,herbstferien
+2018-12-24,2019-01-05,2018,BW,weihnachtsferien
+2019-04-15,2019-04-27,2019,BW,osterferien
+2019-06-11,2019-06-21,2019,BW,pfingstferien
+2019-07-29,2019-09-10,2019,BW,sommerferien
+2019-04-15,2019-04-27,2019,BW,osterferien
+2019-06-11,2019-06-21,2019,BW,pfingstferien
+2019-07-29,2019-09-10,2019,BW,sommerferien
+2019-10-28,2019-10-31,2019,BW,herbstferien
+2019-12-23,2020-01-04,2019,BW,weihnachtsferien
+2020-04-06,2020-04-18,2020,BW,osterferien
+2020-06-02,2020-06-13,2020,BW,pfingstferien
+2020-07-30,2020-09-12,2020,BW,sommerferien
+2020-10-26,2020-10-30,2020,BW,herbstferien
+2020-10-31,2020-10-31,2020,BW,herbstferien
+2020-12-23,2021-01-09,2020,BW,weihnachtsferien
+2021-04-06,2021-04-10,2021,BW,osterferien
+2021-05-25,2021-06-05,2021,BW,pfingstferien
+2021-07-29,2021-09-11,2021,BW,sommerferien
+2021-11-02,2021-11-06,2021,BW,herbstferien
+2021-12-23,2022-01-08,2021,BW,weihnachtsferien
+2022-04-19,2022-04-23,2022,BW,osterferien
+2022-06-07,2022-06-18,2022,BW,pfingstferien
+2022-07-28,2022-09-10,2022,BW,sommerferien
+2022-10-31,2022-10-31,2022,BW,herbstferien
+2022-11-02,2022-11-04,2022,BW,herbstferien
+2022-12-21,2023-01-07,2022,BW,weihnachtsferien
+2023-04-06,2023-04-06,2023,BW,osterferien
+2023-04-11,2023-04-15,2023,BW,osterferien
+2023-05-30,2023-06-09,2023,BW,pfingstferien
+2023-07-27,2023-09-09,2023,BW,sommerferien
+2023-10-30,2023-11-03,2023,BW,herbstferien
+2023-12-23,2024-01-05,2023,BW,weihnachtsferien
+2024-03-23,2024-04-05,2024,BW,osterferien
+2024-05-21,2024-05-31,2024,BW,pfingstferien
+2024-07-25,2024-09-07,2024,BW,sommerferien
+2024-10-28,2024-10-30,2024,BW,herbstferien
+2024-10-31,2024-10-31,2024,BW,herbstferien
+2024-12-23,2025-01-04,2024,BW,weihnachtsferien
