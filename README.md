@@ -70,6 +70,36 @@ Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://op
 
 **[ 🚧 UNDER CONSTRUCTION ]**
 
+
+### Fragen 2024.01.23
+- Q = macht es einen Unterschied wenn ich test period = 10 oder 20 nehme ?
+- Q = schulferien scheinen keinen großen effekt zu haben ...
+    - Im Modell quant reg & grad boost machen Schulferien nicht viel aus …
+    - auch im einfachen lin reg mit / ohne regularization sind schulferien effects nicht riesig
+    - vor allem manche sind positiv (herbst & sommer) manche sind negativ (winter & ostern & pfingsten)
+        - vielleicht … weil über weihnachten kollinearität zwischen normalen holiday dummies und schulferien dummy existiert
+        - aber im sommer gibts auch überlappung mit maria himmelfahrt und weltkindertag … diese werden aber in BW nicht gefeiert !!!
+- Q = Forecasting with weather variables in the model becomes problematic …
+    - and using lagged weather variables for bicycle traffic is probably not so accurate since its the temperature today that matters whether somebody rides a bike …
+    - at most whether it snowed yesterday might be important …
+    - TODO = try lagged weather variables
+- Q = kann ich die negativen predictions von quant reg einfach auf 0 setzen ? oder muss man alle anderen quantile auch hochshiften
+- Q = based on quantile regression, weather variables with highest explainability are different than weather variables with highest correlation ?
+
+```
+precip_indic                          -250  
+temperature                             80  
+precipitation                          -55  
+precip_type                            -30  
+windspeed                              -30  
+windspeed_max                          -10  
+humidity                               -10  
+
+wind_direction                           0  
+visibility                               0  
+sun                                      0  
+```
+
 ### Update 2024.01.22
 
 - Habe Schulferien per [API](https://ferien-api.de/) für alle Bundesländer von 2017 bis 2023 gepullt, da es nur ab 2017 Daten darauf gibt
@@ -95,7 +125,11 @@ quantile_params = {
 - train and test on rolling fcast window (5-fold / rolls) and calculated quantile scores of 3 models and their ensembles
 - gradient boosting / ensemble (grad boost + quant reg) seems to perform best based on quantile score
 
-<img src="./plots/rolling_window_fold_1.png" align="center" width="1000"  />      
+<img src="./plots/rolling_window_fold_1.png" align="center" width="1000"  /> 
+<img src="./plots/rolling_window_fold_2.png" align="center" width="1000"  /> 
+<img src="./plots/rolling_window_fold_3.png" align="center" width="1000"  /> 
+<img src="./plots/rolling_window_fold_4.png" align="center" width="1000"  /> 
+<img src="./plots/rolling_window_fold_5.png" align="center" width="1000"  /> 
 
 | Model               | Fold   | Mean_Quantile_Score | q_score_0.025 | q_score_0.25 | q_score_0.5 | q_score_0.75 | q_score_0.975 |
 |---------------------|--------|---------------------|---------------|--------------|-------------|--------------|---------------|
@@ -129,35 +163,6 @@ quantile_params = {
 | quantile_reg         | fold_4 | 79.539741           | 31.990676     | 127.213391   | 110.393609  | 104.205507   | 23.895521     |
 | quantile_reg         | fold_5 | 238.210009          | 36.605980     | 227.909321   | 365.917651  | 423.984187   | 136.632906    |
 | **Average**         | -      | **148.228566**      | **39.341273** | **163.785442** | **240.014153** | **238.193430** | **57.408529** |
-
-### Fragen 2024.01.23
-- Q = macht es einen Unterschied wenn ich test period = 10 oder 20 nehme ?
-- Q = schulferien scheinen keinen großen effekt zu haben ...
-    - Im Modell quant reg & grad boost machen Schulferien nicht viel aus …
-    - auch im einfachen lin reg mit / ohne regularization sind schulferien effects nicht riesig
-    - vor allem manche sind positiv (herbst & sommer) manche sind negativ (winter & ostern & pfingsten)
-        - vielleicht … weil über weihnachten kollinearität zwischen normalen holiday dummies und schulferien dummy existiert
-        - aber im sommer gibts auch überlappung mit maria himmelfahrt und weltkindertag … diese werden aber in BW nicht gefeiert !!!
-- Q = Forecasting with weather variables in the model becomes problematic …
-    - and using lagged weather variables for bicycle traffic is probably not so accurate since its the temperature today that matters whether somebody rides a bike …
-    - at most whether it snowed yesterday might be important …
-    - TODO = try lagged weather variables
-- Q = kann ich die negativen predictions von quant reg einfach auf 0 setzen ? oder muss man alle anderen quantile auch hochshiften
-- Q = based on quantile regression, weather variables with highest explainability are different than weather variables with highest correlation ?
-
-```
-precip_indic                          -250  
-temperature                             80  
-precipitation                          -55  
-precip_type                            -30  
-windspeed                              -30  
-windspeed_max                          -10  
-humidity                               -10  
-
-wind_direction                           0  
-visibility                               0  
-sun                                      0  
-```
 
 ### ToDos 2023.12.01
 - Schulferien in Baden Württemberg
