@@ -103,7 +103,7 @@ In this case we are predicting 10-steps ahead, so the weather variables are also
     grad_boost_lag                  203.417284
     baseline                        240.794295
 
-<img src="./plots/2024_01_23-21_06_33_rolling_window_fold_5.png" align="center" width="1000"  /> 
+<img src="./plots/2024_01_23-21_06_33_rolling_window_fold_1.png" align="center" width="1000"  /> 
 
 ### Update 2024.01.22
 
