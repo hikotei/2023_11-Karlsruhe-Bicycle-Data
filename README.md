@@ -70,7 +70,6 @@ Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://op
 
 **[ 🚧 UNDER CONSTRUCTION ]**
 
-
 ### Fragen 2024.01.23
 - Q = macht es einen Unterschied wenn ich test period = 10 oder 20 nehme ?
 - Q = schulferien scheinen keinen großen effekt zu haben ...
@@ -79,26 +78,20 @@ Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://op
     - vor allem manche sind positiv (herbst & sommer) manche sind negativ (winter & ostern & pfingsten)
         - vielleicht … weil über weihnachten kollinearität zwischen normalen holiday dummies und schulferien dummy existiert
         - aber im sommer gibts auch überlappung mit maria himmelfahrt und weltkindertag … diese werden aber in BW nicht gefeiert !!!
-- Q = Forecasting with weather variables in the model becomes problematic …
-    - and using lagged weather variables for bicycle traffic is probably not so accurate since its the temperature today that matters whether somebody rides a bike …
-    - at most whether it snowed yesterday might be important …
-    - TODO = try lagged weather variables
 - Q = kann ich die negativen predictions von quant reg einfach auf 0 setzen ? oder muss man alle anderen quantile auch hochshiften
-- Q = based on quantile regression, weather variables with highest explainability are different than weather variables with highest correlation ?
 
-```
-precip_indic                          -250  
-temperature                             80  
-precipitation                          -55  
-precip_type                            -30  
-windspeed                              -30  
-windspeed_max                          -10  
-humidity                               -10  
+### Update 2024.01.23
 
-wind_direction                           0  
-visibility                               0  
-sun                                      0  
-```
+    Model                        Average Quantile Score
+    grad_boost                   129.734795
+    quantile_reg                 148.735066
+    ensemble_bs_qr_gb            153.634811
+    ensemble_qr_gb_no_weather    186.862291
+    quantile_reg_noweather       187.482450
+    quantile_reg_lag             189.292186
+    grad_boost_noweather         190.005049
+    grad_boost_lag               203.417284
+    baseline                     240.794295
 
 ### Update 2024.01.22
 
@@ -163,6 +156,29 @@ quantile_params = {
 | quantile_reg         | fold_4 | 79.539741           | 31.990676     | 127.213391   | 110.393609  | 104.205507   | 23.895521     |
 | quantile_reg         | fold_5 | 238.210009          | 36.605980     | 227.909321   | 365.917651  | 423.984187   | 136.632906    |
 | **Average**         | -      | **148.228566**      | **39.341273** | **163.785442** | **240.014153** | **238.193430** | **57.408529** |
+
+---
+
+Problem: Forecasting with weather variables in the model becomes problematic …
+- and using lagged weather variables for bicycle traffic is probably not so accurate since its the temperature today that matters whether somebody rides a bike …
+- at most whether it snowed yesterday might be important …
+- TODO = try lagged weather variables
+
+Observation: based on quantile regression, weather variables with highest explainability are different than weather variables with highest correlation ?
+
+```
+precip_indic                          -250  
+temperature                             80  
+precipitation                          -55  
+precip_type                            -30  
+windspeed                              -30  
+windspeed_max                          -10  
+humidity                               -10  
+
+wind_direction                           0  
+visibility                               0  
+sun                                      0  
+```
 
 ### ToDos 2023.12.01
 - Schulferien in Baden Württemberg
