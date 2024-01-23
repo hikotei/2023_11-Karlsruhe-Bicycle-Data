@@ -383,9 +383,9 @@ def create_dummy_df(df, month_method='simple', weekday_method='simple', hour_met
 
                 # print(holiday.lower())
                 # skip winter, easter and pfingst holidays
-                if 'weihnacht' in holiday.lower() or 'oster' in holiday.lower() or 'pfingst' in holiday.lower():
-                    print(f">> skipping {holiday.lower()}")
-                    continue
+                # if 'weihnacht' in holiday.lower() or 'oster' in holiday.lower() or 'pfingst' in holiday.lower():
+                #     print(f">> skipping {holiday.lower()}")
+                #     continue
 
                 holiday_str = holiday.lower().replace(' ', '_')
                 df_out[f'is_holiday_school_{holiday_str}'] = df_out['timestamp_CET'].isin(unique_school_holidays_dict[holiday]).astype(int)
