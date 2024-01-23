@@ -1,3 +1,4 @@
 .RData
 .Rhistory
+.pkl
 __pycache__/
