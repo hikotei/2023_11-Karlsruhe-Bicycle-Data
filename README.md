@@ -1,9 +1,9 @@
 # 2023_11-Karlsruhe-Bicycle-Data
 
 ### Summary
-This repository focuses on analyzing bicycle data in Karlsruhe, Germany, and includes weather data from the German Weather Service (DWD). The weather data is processed using the rDWD package in R, and the README provides detailed information about the variables, their descriptions, and aggregation methods used.
+This repository analyzes bicycle data in Karlsruhe, Germany, along with weather data from the German Weather Service (DWD). The rDWD package in R is used to import weather data. See below for detailed variable descriptions and aggregation methods. 
 
-<img src="./plots/bikedata_corr_plot.png" align="center" width="300"  />      
+On top of a simple benchmark, quantile regression and gradient boosting models are fitted, both with and without weather variables, and also with lagged weather variables. Findings suggest limited improvement with weather data, raising questions about its necessity. Schulferien (school holidays) exhibit minor effects, and forecasts incorporating weather variables face challenges.
 
 ---
 
@@ -129,6 +129,8 @@ wind_direction                           0
 visibility                               0  
 sun                                      0  
 ```
+
+<img src="./plots/bikedata_corr_plot.png" align="center" width="300"  />      
 
 ### DWD Weather Variable Aggregation
 The table below summarizes the aggregation methods applied to specific DWD variables in the output dataset:
