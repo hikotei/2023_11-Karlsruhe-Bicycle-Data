@@ -103,6 +103,8 @@ In this case we are predicting 10-steps ahead, so the weather variables are also
     grad_boost_lag                  203.417284
     baseline                        240.794295
 
+<img src="./plots/2024_01_23-21_06_33_rolling_window_fold_1.png" align="center" width="1000"  /> 
+
 ### Update 2024.01.22
 
 - Habe Schulferien per [API](https://ferien-api.de/) für alle Bundesländer von 2017 bis 2023 gepullt, da es nur ab 2017 Daten darauf gibt
@@ -129,10 +131,6 @@ quantile_params = {
 - gradient boosting / ensemble (grad boost + quant reg) seems to perform best based on quantile score
 
 <img src="./plots/rolling_window_fold_1.png" align="center" width="1000"  /> 
-<img src="./plots/rolling_window_fold_2.png" align="center" width="1000"  /> 
-<img src="./plots/rolling_window_fold_3.png" align="center" width="1000"  /> 
-<img src="./plots/rolling_window_fold_4.png" align="center" width="1000"  /> 
-<img src="./plots/rolling_window_fold_5.png" align="center" width="1000"  /> 
 
 | Model               | Fold   | Mean_Quantile_Score | q_score_0.025 | q_score_0.25 | q_score_0.5 | q_score_0.75 | q_score_0.975 |
 |---------------------|--------|---------------------|---------------|--------------|-------------|--------------|---------------|
