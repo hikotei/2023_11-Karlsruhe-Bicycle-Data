@@ -70,16 +70,19 @@ Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://op
 
 **[ 🚧 UNDER CONSTRUCTION ]**
 
-### Fragen 2024.01.23
-- Q = macht es einen Unterschied wenn ich test period = 10 oder 20 nehme ?
-- Q = schulferien scheinen keinen großen effekt zu haben ...
+### Fragen / Beobachtungen 2024.01.23
+- Q = Wetterdaten scheinen nicht extrem wichtig zu sein
+    - mit Wetterdaten sind Modelle immer noch am besten aber nicht überragend besser
+    - aber zB gelaggte Wetterdaten sind schlechter als gar keine Wetterdaten
+- Q = Schulferien scheinen keinen großen effekt zu haben ...
     - Im Modell quant reg & grad boost machen Schulferien nicht viel aus …
     - auch im einfachen lin reg mit / ohne regularization sind schulferien effects nicht riesig
     - vor allem manche sind positiv (herbst & sommer) manche sind negativ (winter & ostern & pfingsten)
         - vielleicht … weil über weihnachten kollinearität zwischen normalen holiday dummies und schulferien dummy existiert
-        - aber im sommer gibts auch überlappung mit maria himmelfahrt und weltkindertag … diese werden aber in BW nicht gefeiert !!!
 - Q = kann ich die negativen predictions von quant reg einfach auf 0 setzen ? oder muss man alle anderen quantile auch hochshiften
-
+- Q = welche test period (h-step ahead) soll ich benutzen für die evaluation der modelle ?
+    - Ich habe 10 und 20 probiert und es kommen manchmal etwas andere rankings (nach avg quantile score) raus
+ 
 ### Update 2024.01.23
 
 In addition to the 3 base models: baseline, quant reg, grad boost ... I also added versions with no weather variables, and version with lagged weather variables.
