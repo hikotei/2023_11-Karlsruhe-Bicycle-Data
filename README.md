@@ -20,25 +20,25 @@ The table below summarizes the aggregation methods applied to specific DWD varia
 | FX_911.Windspitze_Stunde1        | windspeed_max                 | Maximum                   |
 | RS_IND.Niederschlagsindikator    | precip_indic                  | Median                    |
 | WRTR.Niederschlagsform           | precip_type                   | Median                    |
-
+  
 ### DWD Weather Data Descriptions
 Detailed descriptions of the weather variables used in this analysis, including links to their respective description pdfs from official DWD [mirror](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/).
 
-#### Stündliche Stationsmessungen der Lufttemperatur und Luftfeuchte für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/air_temperature/BESCHREIBUNG_obsgermany_climate_hourly_air_temperature_de.pdf)
+Stündliche Stationsmessungen der Lufttemperatur und Luftfeuchte für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/air_temperature/BESCHREIBUNG_obsgermany_climate_hourly_air_temperature_de.pdf)
 
 - `TT_TU.Lufttemperatur`: Lufttemperatur in °C 
 - `RF_TU.Relative_Feuchte`: relative Feuchte in %
 
-#### Stundenmaximum aus Stationsmessungen der Windgeschwindigkeit für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/extreme_wind/BESCHREIBUNG_obsgermany_climate_hourly_extreme_wind_de.pdf)
+Stundenmaximum aus Stationsmessungen der Windgeschwindigkeit für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/extreme_wind/BESCHREIBUNG_obsgermany_climate_hourly_extreme_wind_de.pdf)
 
 - `FX_911.Windspitze_Stunde1`: Windgeschwindigkeit, Windspitze in m/s, Fehlwerte=-999
 
-#### Stundenmittel aus Stationsmessungen der Windgeschwindigkeit und Windrichtung für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/wind/BESCHREIBUNG_obsgermany_climate_hourly_wind_de.pdf)
+Stundenmittel aus Stationsmessungen der Windgeschwindigkeit und Windrichtung für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/wind/BESCHREIBUNG_obsgermany_climate_hourly_wind_de.pdf)
 
 - `F.Windgeschwindigkeit`: Windgeschwindigkeit in m/s, Fehlwerte=-999
 - `D.Windrichtung`: Windrichtung in °, Fehlwerte=-999
 
-#### Stündliche Stationsmessungen des Niederschlags für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/precipitation/BESCHREIBUNG_obsgermany_climate_hourly_precipitation_de.pdf)
+Stündliche Stationsmessungen des Niederschlags für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/precipitation/BESCHREIBUNG_obsgermany_climate_hourly_precipitation_de.pdf)
 
 - `R1.Niederschlagshoehe`: Niederschlagshoehe in mm (Stundensumme)
 - `RS_IND.Niederschlagsindikator`: Indikator Niederschlag, 0=nein, 1=ja, -999=Fehlwert
@@ -52,11 +52,11 @@ Detailed descriptions of the weather variables used in this analysis, including 
   - 9 = Fehlkennung; fehlender Wert oder Niederschlagsform nicht feststellbar bei automatischer Messung
   - -999 = Fehlwert
 
-#### Stündliche Stationsmessungen der Sonnenscheindauer für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/sun/BESCHREIBUNG_obsgermany_climate_hourly_sun_de.pdf)
+Stündliche Stationsmessungen der Sonnenscheindauer für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/sun/BESCHREIBUNG_obsgermany_climate_hourly_sun_de.pdf)
 
 - `SD_SO.Sonnenscheindauer`: stdl. Sonnenscheindauer in min, Fehlwert = -999 (Stundensumme)
 
-#### Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/visibility/BESCHREIBUNG_obsgermany_climate_hourly_visibility_de.pdf)
+Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/visibility/BESCHREIBUNG_obsgermany_climate_hourly_visibility_de.pdf)
 
 - `V_VV.Sichtweite`: Sichtweite in Metern, Fehlwerte=-999
 - `V_VV_I`: Sichtweiten Index, Angabe wie die Messung erfolgte
@@ -70,25 +70,66 @@ Detailed descriptions of the weather variables used in this analysis, including 
 
 **[ 🚧 UNDER CONSTRUCTION ]**
 
+
+### Fragen 2024.01.23
+- Q = macht es einen Unterschied wenn ich test period = 10 oder 20 nehme ?
+- Q = schulferien scheinen keinen großen effekt zu haben ...
+    - Im Modell quant reg & grad boost machen Schulferien nicht viel aus …
+    - auch im einfachen lin reg mit / ohne regularization sind schulferien effects nicht riesig
+    - vor allem manche sind positiv (herbst & sommer) manche sind negativ (winter & ostern & pfingsten)
+        - vielleicht … weil über weihnachten kollinearität zwischen normalen holiday dummies und schulferien dummy existiert
+        - aber im sommer gibts auch überlappung mit maria himmelfahrt und weltkindertag … diese werden aber in BW nicht gefeiert !!!
+- Q = Forecasting with weather variables in the model becomes problematic …
+    - and using lagged weather variables for bicycle traffic is probably not so accurate since its the temperature today that matters whether somebody rides a bike …
+    - at most whether it snowed yesterday might be important …
+    - TODO = try lagged weather variables
+- Q = kann ich die negativen predictions von quant reg einfach auf 0 setzen ? oder muss man alle anderen quantile auch hochshiften
+- Q = based on quantile regression, weather variables with highest explainability are different than weather variables with highest correlation ?
+
+```
+precip_indic                          -250  
+temperature                             80  
+precipitation                          -55  
+precip_type                            -30  
+windspeed                              -30  
+windspeed_max                          -10  
+humidity                               -10  
+
+wind_direction                           0  
+visibility                               0  
+sun                                      0  
+```
+
 ### Update 2024.01.22
-applied 3 models: naive benchmark, quantile regression, gradient boosting
 
-    naive benchmark:
-    - mean of past quantiles with same weekday and month
+- Habe Schulferien per [API](https://ferien-api.de/) für alle Bundesländer von 2017 bis 2023 gepullt, da es nur ab 2017 Daten darauf gibt
+- Da wir eigentlich nur Ferien für BW brauchen, habe ich den Rest noch manuell bis 2013 eintragen per KMK Archiv der historischen pdf Daten [Link](https://www.kmk.org/service/ferien/archiv-der-ferientermine.html)
+- BW Schulferien habe ich abgespeicher in "./data" folder [Link](https://raw.githubusercontent.com/hikotei/2023_11-Karlsruhe-Bicycle-Data/main/data/schulferien_BW_2012_2024.csv)
 
-    quantile regression:
-    - based on dummies for weekday and month
-    - weather variables
-    - holiday and school holiday dummies
+applied 3 models
+1) **naive benchmark**: using mean of past quantiles with same weekday and month
+2) **quantile regression**: based on weather variables, holiday and school holiday dummies + dummies for weekday and month
+3) **gradient boosting**: based on weather variables, holiday and school holiday dummies + features: weekday and month
 
-    gradient boosting:
-    - based on features: weekday, month
-    - weather variables
-    - holiday and school holiday dummies
+did gridsearch for best params of gradient boosting models for each quantile separately
+```
+quantile_params = {
+    0.025: {'learning_rate': 0.5, 'max_depth': 10, 'min_samples_leaf': 3, 'n_estimators': 400, 'subsample': 0.5},
+    0.250: {'learning_rate': 0.2, 'max_depth': 7, 'min_samples_leaf': 3, 'n_estimators': 400, 'subsample': 0.9},
+    0.500: {'learning_rate': 0.2, 'max_depth': 5, 'min_samples_leaf': 3, 'n_estimators': 400, 'subsample': 0.9},
+    0.750: {'learning_rate': 0.2, 'max_depth': 10, 'min_samples_leaf': 3, 'n_estimators': 400, 'subsample': 0.9},
+    0.975: {'learning_rate': 0.5, 'max_depth': 10, 'min_samples_leaf': 3, 'n_estimators': 400, 'subsample': 0.7}}
+```
 
-**-> Evalutation**
-- train and test on rolling fcast window and calculated quantile scores of 3 models and their ensembles
+**Evaluation**
+- train and test on rolling fcast window (5-fold / rolls) and calculated quantile scores of 3 models and their ensembles
 - gradient boosting / ensemble (grad boost + quant reg) seems to perform best based on quantile score
+
+<img src="./plots/rolling_window_fold_1.png" align="center" width="1000"  /> 
+<img src="./plots/rolling_window_fold_2.png" align="center" width="1000"  /> 
+<img src="./plots/rolling_window_fold_3.png" align="center" width="1000"  /> 
+<img src="./plots/rolling_window_fold_4.png" align="center" width="1000"  /> 
+<img src="./plots/rolling_window_fold_5.png" align="center" width="1000"  /> 
 
 | Model               | Fold   | Mean_Quantile_Score | q_score_0.025 | q_score_0.25 | q_score_0.5 | q_score_0.75 | q_score_0.975 |
 |---------------------|--------|---------------------|---------------|--------------|-------------|--------------|---------------|
@@ -123,20 +164,6 @@ applied 3 models: naive benchmark, quantile regression, gradient boosting
 | quantile_reg         | fold_5 | 238.210009          | 36.605980     | 227.909321   | 365.917651  | 423.984187   | 136.632906    |
 | **Average**         | -      | **148.228566**      | **39.341273** | **163.785442** | **240.014153** | **238.193430** | **57.408529** |
 
-based on quantile regression, weather variables with highest explainability are ... even though in the correlation plot they are not the weather variables with highest correlation ?
-
-    precip_indic                          -250  
-    temperature                             80  
-    precipitation                          -55  
-    precip_type                            -30  
-    windspeed                              -30  
-    windspeed_max                          -10  
-    humidity                               -10  
-
-    wind_direction                           0  
-    visibility                               0  
-    sun                                      0  
- 
 ### ToDos 2023.12.01
 - Schulferien in Baden Württemberg
 - Benchmark Modelle probieren / überlegen / unterschiedliche Komplexitäten etc
