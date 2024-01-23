@@ -82,16 +82,23 @@ Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://op
 
 ### Update 2024.01.23
 
-    Model                        Average Quantile Score
-    grad_boost                   129.734795
-    quantile_reg                 148.735066
-    ensemble_bs_qr_gb            153.634811
-    ensemble_qr_gb_no_weather    186.862291
-    quantile_reg_noweather       187.482450
-    quantile_reg_lag             189.292186
-    grad_boost_noweather         190.005049
-    grad_boost_lag               203.417284
-    baseline                     240.794295
+In addition to the 3 base models: baseline, quant reg, grad boost ... I also added versions with no weather variables, and version with lagged weather variables.
+In this case we are predicting 10-steps ahead, so the weather variables are also lagging behind by 10 days such that at the point of fcast all lagged weather variables should theoretically be known.
+
+ensemble_bs_qr_gb = ensemble between baseline + grad boost & quant reg with weather
+ensemble_bs_qr_gb_no_weather = ensemble between baseline + grad boost & quant reg without weather
+
+    Model                           Average Quantile Score
+    grad_boost                      129.734795
+    quantile_reg                    148.735066
+    ensemble_bs_qr_gb               153.634811
+    ensemble_bs_qr_gb_noweather     186.862291
+    quantile_reg_noweather          187.482450
+    quantile_reg_lag                189.292186
+    grad_boost_noweather            190.005049
+    ensemble_bs_qr_gb_lag           196.454960
+    grad_boost_lag                  203.417284
+    baseline                        240.794295
 
 ### Update 2024.01.22
 
