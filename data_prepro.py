@@ -407,6 +407,15 @@ def fix_quantile_crossing(df):
 
     return df_out
 
+def fix_quantile_crossing_np(matrix):
+
+    for row_idx in range(matrix.shape[0]):
+        row = matrix[row_idx,:]
+        row = np.sort(row)
+        matrix[row_idx,:] = row
+        
+    return matrix
+
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =	
 
 # if __name__ == "__main__":
