@@ -85,8 +85,11 @@ Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://op
 In addition to the 3 base models: baseline, quant reg, grad boost ... I also added versions with no weather variables, and version with lagged weather variables.
 In this case we are predicting 10-steps ahead, so the weather variables are also lagging behind by 10 days such that at the point of fcast all lagged weather variables should theoretically be known.
 
-ensemble_bs_qr_gb = ensemble between baseline + grad boost & quant reg with weather
-ensemble_bs_qr_gb_no_weather = ensemble between baseline + grad boost & quant reg without weather
+| Ensemble Name                | Description                                               |
+| --------------------------   | --------------------------------------------------------- |
+| ensemble_bs_qr_gb            | Ensemble between baseline, grad boost, and quant reg with weather  |
+| ensemble_bs_qr_gb_lag        | Ensemble between baseline, grad boost, and quant reg with lagged weather  |
+| ensemble_bs_qr_gb_no_weather | Ensemble between baseline, grad boost, and quant reg without weather  |
 
     Model                           Average Quantile Score
     grad_boost                      129.734795
