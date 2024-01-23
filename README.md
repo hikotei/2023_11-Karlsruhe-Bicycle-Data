@@ -3,7 +3,11 @@
 ### Summary
 This repository analyzes bicycle data in Karlsruhe, Germany, along with weather data from the German Weather Service (DWD). The rDWD package in R is used to import weather data. See below for detailed variable descriptions and aggregation methods. 
 
-On top of a simple benchmark, quantile regression and gradient boosting models are fitted, both with and without weather variables, and also with lagged weather variables. Findings suggest limited improvement with weather data, raising questions about its necessity. Schulferien (school holidays) exhibit minor effects, and forecasts incorporating weather variables face challenges.
+Probabilistic forecasts are made using a simple benchmark, along with quantile regression and gradient boosting models. For both models versions with and without weather variables, and also with lagged weather variables are tested. 
+
+Evaluation is done on a rolling window forecast basis along with the quantile score. 
+
+Findings suggest limited improvement with weather data, raising questions about its necessity. Schulferien (school holidays) exhibit minor effects, and forecasts incorporating weather variables face challenges.
 
 ---
 
