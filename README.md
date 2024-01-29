@@ -1,85 +1,31 @@
 # 2023_11-Karlsruhe-Bicycle-Data
 
 ### Summary
-This repository focuses on analyzing bicycle data in Karlsruhe, Germany, and includes weather data from the German Weather Service (DWD). The weather data is processed using the rDWD package in R, and the README provides detailed information about the variables, their descriptions, and aggregation methods used.
+This repository analyzes bicycle data in Karlsruhe, Germany, along with weather data from the German Weather Service (DWD). The rDWD package in R is used to import weather data. See below for detailed variable descriptions and aggregation methods. 
 
-<img src="./plots/bikedata_corr_plot.png" align="center" width="300"  />      
+Probabilistic forecasts are made using a simple benchmark, along with quantile regression and gradient boosting models. For both models versions with and without weather variables, and also with lagged weather variables are tested. 
 
-### DWD Weather Variable Aggregation
-The table below summarizes the aggregation methods applied to specific DWD variables in the output dataset:
+Evaluation is done on a rolling window forecast basis along with the quantile score. 
 
-| DWD Variable Name | Variable Name in Output | Aggregation Method |
-|----------------------------------|-------------------------------|---------------------------|
-| TT_TU.Lufttemperatur             | temperature                   | Mean                      |
-| RF_TU.Relative_Feuchte           | humidity                      | Mean                      |
-| F.Windgeschwindigkeit            | windspeed                     | Mean                      |
-| D.Windrichtung                   | wind_direction                | Mean                      |
-| V_VV.Sichtweite                  | visibility                    | Mean                      |
-| R1.Niederschlagshoehe            | precipitation                 | Sum                       |
-| SD_SO.Sonnenscheindauer          | sun                           | Sum                       |
-| FX_911.Windspitze_Stunde1        | windspeed_max                 | Maximum                   |
-| RS_IND.Niederschlagsindikator    | precip_indic                  | Median                    |
-| WRTR.Niederschlagsform           | precip_type                   | Median                    |
-  
-### DWD Weather Data Descriptions
-Detailed descriptions of the weather variables used in this analysis, including links to their respective description pdfs from official DWD [mirror](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/).
-
-Stündliche Stationsmessungen der Lufttemperatur und Luftfeuchte für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/air_temperature/BESCHREIBUNG_obsgermany_climate_hourly_air_temperature_de.pdf)
-
-- `TT_TU.Lufttemperatur`: Lufttemperatur in °C 
-- `RF_TU.Relative_Feuchte`: relative Feuchte in %
-
-Stundenmaximum aus Stationsmessungen der Windgeschwindigkeit für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/extreme_wind/BESCHREIBUNG_obsgermany_climate_hourly_extreme_wind_de.pdf)
-
-- `FX_911.Windspitze_Stunde1`: Windgeschwindigkeit, Windspitze in m/s, Fehlwerte=-999
-
-Stundenmittel aus Stationsmessungen der Windgeschwindigkeit und Windrichtung für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/wind/BESCHREIBUNG_obsgermany_climate_hourly_wind_de.pdf)
-
-- `F.Windgeschwindigkeit`: Windgeschwindigkeit in m/s, Fehlwerte=-999
-- `D.Windrichtung`: Windrichtung in °, Fehlwerte=-999
-
-Stündliche Stationsmessungen des Niederschlags für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/precipitation/BESCHREIBUNG_obsgermany_climate_hourly_precipitation_de.pdf)
-
-- `R1.Niederschlagshoehe`: Niederschlagshoehe in mm (Stundensumme)
-- `RS_IND.Niederschlagsindikator`: Indikator Niederschlag, 0=nein, 1=ja, -999=Fehlwert
-- `WRTR.Niederschlagsform`:
-  - 0 = kein Niederschlag (konventionelle oder automatische Messung)
-  - 1 = nur Regen (in historischen Daten vor dem 01.01.1979)
-  - 4 = Form des Niederschlags nicht bekannt, obwohl Niederschlag gemeldet; Form fallender und abgesetzter Niederschläge können bei automatischer Messung nicht eindeutig festgestellt werden
-  - 6 = nur Regen; flüssiger Niederschlag bei automatischer Messung
-  - 7 = nur Schnee; fester Niederschlag bei automatischer Messung
-  - 8 = Regen und Schnee und/oder Schneeregen; flüssig und fester Niederschlag bei automatischer Messung
-  - 9 = Fehlkennung; fehlender Wert oder Niederschlagsform nicht feststellbar bei automatischer Messung
-  - -999 = Fehlwert
-
-Stündliche Stationsmessungen der Sonnenscheindauer für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/sun/BESCHREIBUNG_obsgermany_climate_hourly_sun_de.pdf)
-
-- `SD_SO.Sonnenscheindauer`: stdl. Sonnenscheindauer in min, Fehlwert = -999 (Stundensumme)
-
-Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/visibility/BESCHREIBUNG_obsgermany_climate_hourly_visibility_de.pdf)
-
-- `V_VV.Sichtweite`: Sichtweite in Metern, Fehlwerte=-999
-- `V_VV_I`: Sichtweiten Index, Angabe wie die Messung erfolgte
-  - P=Beobachter(Person),I=Instrument, Fehlwerte=-999
-- `QN_8`: Qualitaetsniveau
-  - QN = 3: automatische Prüfung und Korrektur;
-  - QN = 5: historische, subjektive Verfahren;
-  - QN = 7: geprüft, gepflegt, nicht korrigiert;
+Findings suggest limited improvement with weather data, raising questions about its necessity. Schulferien (school holidays) exhibit minor effects, and forecasts incorporating weather variables face challenges.
 
 ---
 
 **[ 🚧 UNDER CONSTRUCTION ]**
 
-### Fragen 2024.01.23
-- Q = macht es einen Unterschied wenn ich test period = 10 oder 20 nehme ?
-- Q = schulferien scheinen keinen großen effekt zu haben ...
+### Fragen / Beobachtungen 2024.01.23
+- Q = Wetterdaten scheinen nicht extrem wichtig zu sein
+    - mit Wetterdaten sind Modelle immer noch am besten aber nicht überragend besser
+    - aber zB gelaggte Wetterdaten sind schlechter als gar keine Wetterdaten
+- Q = Schulferien scheinen keinen großen effekt zu haben ...
     - Im Modell quant reg & grad boost machen Schulferien nicht viel aus …
     - auch im einfachen lin reg mit / ohne regularization sind schulferien effects nicht riesig
     - vor allem manche sind positiv (herbst & sommer) manche sind negativ (winter & ostern & pfingsten)
-        - vielleicht … weil über weihnachten kollinearität zwischen normalen holiday dummies und schulferien dummy existiert
-        - aber im sommer gibts auch überlappung mit maria himmelfahrt und weltkindertag … diese werden aber in BW nicht gefeiert !!!
+    - vielleicht … weil über weihnachten kollinearität zwischen normalen holiday dummies und schulferien dummy existiert
 - Q = kann ich die negativen predictions von quant reg einfach auf 0 setzen ? oder muss man alle anderen quantile auch hochshiften
-
+- Q = welche test period (h-step ahead) soll ich benutzen für die evaluation der modelle ?
+    - Ich habe 10 und 20 probiert und es kommen manchmal etwas andere rankings (nach avg quantile score) raus
+ 
 ### Update 2024.01.23
 
 In addition to the 3 base models: baseline, quant reg, grad boost ... I also added versions with no weather variables, and version with lagged weather variables.
@@ -187,6 +133,69 @@ wind_direction                           0
 visibility                               0  
 sun                                      0  
 ```
+
+<img src="./plots/bikedata_corr_plot.png" align="center" width="300"  />      
+
+### DWD Weather Variable Aggregation
+The table below summarizes the aggregation methods applied to specific DWD variables in the output dataset:
+
+| DWD Variable Name | Variable Name in Output | Aggregation Method |
+|----------------------------------|-------------------------------|---------------------------|
+| TT_TU.Lufttemperatur             | temperature                   | Mean                      |
+| RF_TU.Relative_Feuchte           | humidity                      | Mean                      |
+| F.Windgeschwindigkeit            | windspeed                     | Mean                      |
+| D.Windrichtung                   | wind_direction                | Mean                      |
+| V_VV.Sichtweite                  | visibility                    | Mean                      |
+| R1.Niederschlagshoehe            | precipitation                 | Sum                       |
+| SD_SO.Sonnenscheindauer          | sun                           | Sum                       |
+| FX_911.Windspitze_Stunde1        | windspeed_max                 | Maximum                   |
+| RS_IND.Niederschlagsindikator    | precip_indic                  | Median                    |
+| WRTR.Niederschlagsform           | precip_type                   | Median                    |
+  
+### DWD Weather Data Descriptions
+Detailed descriptions of the weather variables used in this analysis, including links to their respective description pdfs from official DWD [mirror](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/).
+
+Stündliche Stationsmessungen der Lufttemperatur und Luftfeuchte für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/air_temperature/BESCHREIBUNG_obsgermany_climate_hourly_air_temperature_de.pdf)
+
+- `TT_TU.Lufttemperatur`: Lufttemperatur in °C 
+- `RF_TU.Relative_Feuchte`: relative Feuchte in %
+
+Stundenmaximum aus Stationsmessungen der Windgeschwindigkeit für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/extreme_wind/BESCHREIBUNG_obsgermany_climate_hourly_extreme_wind_de.pdf)
+
+- `FX_911.Windspitze_Stunde1`: Windgeschwindigkeit, Windspitze in m/s, Fehlwerte=-999
+
+Stundenmittel aus Stationsmessungen der Windgeschwindigkeit und Windrichtung für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/wind/BESCHREIBUNG_obsgermany_climate_hourly_wind_de.pdf)
+
+- `F.Windgeschwindigkeit`: Windgeschwindigkeit in m/s, Fehlwerte=-999
+- `D.Windrichtung`: Windrichtung in °, Fehlwerte=-999
+
+Stündliche Stationsmessungen des Niederschlags für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/precipitation/BESCHREIBUNG_obsgermany_climate_hourly_precipitation_de.pdf)
+
+- `R1.Niederschlagshoehe`: Niederschlagshoehe in mm (Stundensumme)
+- `RS_IND.Niederschlagsindikator`: Indikator Niederschlag, 0=nein, 1=ja, -999=Fehlwert
+- `WRTR.Niederschlagsform`:
+  - 0 = kein Niederschlag (konventionelle oder automatische Messung)
+  - 1 = nur Regen (in historischen Daten vor dem 01.01.1979)
+  - 4 = Form des Niederschlags nicht bekannt, obwohl Niederschlag gemeldet; Form fallender und abgesetzter Niederschläge können bei automatischer Messung nicht eindeutig festgestellt werden
+  - 6 = nur Regen; flüssiger Niederschlag bei automatischer Messung
+  - 7 = nur Schnee; fester Niederschlag bei automatischer Messung
+  - 8 = Regen und Schnee und/oder Schneeregen; flüssig und fester Niederschlag bei automatischer Messung
+  - 9 = Fehlkennung; fehlender Wert oder Niederschlagsform nicht feststellbar bei automatischer Messung
+  - -999 = Fehlwert
+
+Stündliche Stationsmessungen der Sonnenscheindauer für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/sun/BESCHREIBUNG_obsgermany_climate_hourly_sun_de.pdf)
+
+- `SD_SO.Sonnenscheindauer`: stdl. Sonnenscheindauer in min, Fehlwert = -999 (Stundensumme)
+
+Stündliche Stationsmessungen der Sichtweite für Deutschland [(doc)](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/visibility/BESCHREIBUNG_obsgermany_climate_hourly_visibility_de.pdf)
+
+- `V_VV.Sichtweite`: Sichtweite in Metern, Fehlwerte=-999
+- `V_VV_I`: Sichtweiten Index, Angabe wie die Messung erfolgte
+  - P=Beobachter(Person),I=Instrument, Fehlwerte=-999
+- `QN_8`: Qualitaetsniveau
+  - QN = 3: automatische Prüfung und Korrektur;
+  - QN = 5: historische, subjektive Verfahren;
+  - QN = 7: geprüft, gepflegt, nicht korrigiert;
 
 ### ToDos 2023.12.01
 - Schulferien in Baden Württemberg
