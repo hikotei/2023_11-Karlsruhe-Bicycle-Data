@@ -71,21 +71,21 @@ link <- selectDWD(id=4177, res="hourly", var=vars_hourly, per="historical")
 weather_hist <- dataDWD(link, force=NA, varnames=TRUE, read=TRUE)
 weather_hist_df <- Reduce(function(df1, df2) merge(df1, df2), weather_hist)
 
-# only need historical data up to first timestamp in bicycle data
+# only need historical data starting from first timestamp in bicycle data
 weather_hist_df <- weather_hist_df[weather_hist_df$MESS_DATUM > bike_df_first_date, ]
 
-# only need recent data up to last timestamp in weather_hist_df
+# only need recent data starting from last timestamp in weather_hist_df
 weather_hist_last_date <- as.POSIXct(max(weather_hist_df$MESS_DATUM))
 weather_recent_df <- weather_recent_df[weather_recent_df$MESS_DATUM > weather_hist_last_date, ]
 
 # rbind weather_recent_df and weather_hist_df
 weather_df <- rbind(weather_hist_df, weather_recent_df)
 
-# remove irrelevabt cols
+# remove irrelevant cols
 columns_to_remove <- c("eor", "^QN", "V_VV_I")  # Remove columns starting with QN
 weather_df_clean <- weather_df[, !grepl(paste(columns_to_remove, collapse = "|"), names(weather_df)), drop = FALSE]
 
-write.csv(weather_df_clean, "weather_df_clean.csv", row.names=FALSE)
+# write.csv(weather_df_clean, "./data/weather_df_clean.csv", row.names=FALSE)
 
 # - - - - - - - - - 
 ## aggregate to daily data ####
@@ -115,6 +115,19 @@ weather_df_daily <- weather_df_clean %>% group_by(date = as.Date(weather_df_clea
               precip_indic = median(RS_IND.Niederschlagsindikator, na.rm=TRUE),
               precip_type = median(WRTR.Niederschlagsform, na.rm=TRUE))
 
+# Find the first and last date index
+first_date <- min(bike_df$date)
+last_date <- max(bike_df$date)
+
+# Subset the data frame to include only rows between the first and last date index
+weather_df_daily_subset <- weather_df_daily[weather_df_daily$date >= first_date 
+                                            & weather_df_daily$date <= last_date, ]
+
+first_date <- min(weather_df_daily_subset$date)
+last_date <- max(weather_df_daily_subset$date)
+fname <- paste0(first_date, "_", last_date, "_KA_weather_daily.csv")
+write.csv(weather_df_daily_subset, paste0("./data/", fname), row.names=FALSE)
+
 # - - - - - - - - - 
 ## check NAs ####
 # - - - - - - - - -
@@ -122,8 +135,8 @@ weather_df_daily <- weather_df_clean %>% group_by(date = as.Date(weather_df_clea
 # mainly for "precip_indic" and "precip_type" even after na.rm 
 # because for some days all values are NA 
 
-# colSums(is.na(weather_df_daily))
-# weather_df_daily[rowSums(is.na(weather_df_daily)) > 0, ]
+colSums(is.na(weather_df_daily))
+weather_df_daily[rowSums(is.na(weather_df_daily)) > 0, ]
 
 # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 # Merge Data & Save ####
