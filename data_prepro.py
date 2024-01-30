@@ -187,7 +187,7 @@ def create_features_df(df, holiday_method='simple', lags=None, school_holidays_b
 
     return df_out
 
-def create_dummy_df(df, month_method='simple', weekday_method='simple', hour_method='simple', holiday_method='simple', school_holidays_bw=False):
+def create_dummy_df(df, month_method='simple', weekday_method='simple', holiday_method='simple', school_holidays_bw=False):
 
     df_out = df.copy()
 
